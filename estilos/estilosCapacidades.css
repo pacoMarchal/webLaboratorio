@@ -1,0 +1,82 @@
+section {
+  margin: 3rem 0;
+}
+
+.capacidades-detalladas {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Cada bloque con línea al final */
+.capacidades-detalladas .bloque-capacidades {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding-top: 4rem; /* cambia de padding-bottom */
+}
+
+/* Línea horizontal al inicio del bloque */
+.bloque-capacidades::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--ensayosNumeroLineaColor);
+  z-index: 1;
+}
+
+/* Número centrado justo encima de la línea */
+.bloque-capacidades .numero {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -53%);
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--ensayosNumeroLineaColor);
+  background-color: black;
+  padding: 0 1rem;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Imagen */
+.bloque-capacidades img {
+  width: 40%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* Texto */
+.bloque-capacidades .texto h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--menuTextoHover);
+}
+
+.bloque-capacidades .texto {
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  max-width: 45%;
+}
+
+.texto.izquierda {
+  text-align: left;
+}
+
+.texto.derecha {
+  text-align: right;
+}
+
+.izquierda, .derecha{
+  transform: none;
+}

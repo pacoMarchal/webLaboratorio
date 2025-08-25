@@ -1,0 +1,19 @@
+:root{
+  --menuTextoColor:white;
+  --menuFondo:#6c32697a;
+  --menuTextoHover:#ffcc00;
+  --subMenuFondo:#21659f;
+  --subMenuFondoBorde:#ffffff8f;
+  --submenuLiHover:#6c3269;
+  --slideBotonesFondo:rgba(255, 255, 255, 0.2);
+  --responsiveMenuBoton:white;
+  --responsiveMenuFondo:rgba(0, 0, 0, 0.85);
+  --mainQuienes:#6c3269;
+  --mainQuienesFondoTexto:black;
+  --mainGridColorFondo:#dfdcdf;
+  --mainEnsayosLineaSubH2:#f25e21;
+  --mainEnsayosTextoIconos:#555;
+  --mainCapacidadesLineaSubH2:#21659f;
+  --mainMisionesFondo:#352c4d;
+  --ensayosNumeroLineaColor:#ffffff3b;
+}
