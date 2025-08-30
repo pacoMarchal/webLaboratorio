@@ -35,3 +35,22 @@ imagenes.forEach(imagen=>{
     imagen.title=imagen.alt;
   })
 });
+
+// MODAL
+const modal = document.getElementById("zoom-modal");
+const modalImg = document.getElementById("imagen-ampliada");
+const cerrar = document.querySelector(".cerrar");
+
+document.querySelectorAll(".carrusel-imagenes img").forEach(img => {
+  img.addEventListener("click", () => {
+    modalImg.src = img.src;
+    modalImg.alt = img.alt;
+    modal.style.display = "block";
+  });
+});
+
+cerrar.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+
