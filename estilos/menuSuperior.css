@@ -71,7 +71,7 @@
   flex-direction: column;
   transition: opacity 0.3s ease, transform 0.3s ease;
   position: absolute;
-  top: 2rem;
+  top: 3rem;
   left: 0;
   background-color: var(--subMenuFondo);
   border: 1px solid var(--subMenuFondoBorde);
@@ -118,3 +118,4 @@ ul.submenu {
   border: none;
   cursor: pointer;
 }
+
