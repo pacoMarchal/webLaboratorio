@@ -45,7 +45,11 @@ document.querySelectorAll(".carrusel-imagenes img").forEach(img => {
   img.addEventListener("click", () => {
     modalImg.src = img.src;
     modalImg.alt = img.alt;
-    modal.style.display = "block";
+
+    // Mostrar el modal con un pequeño retraso para evitar conflicto con el click global
+    setTimeout(() => {
+     modal.style.display = "block";
+   }, 10);
   });
 });
 
@@ -53,4 +57,12 @@ cerrar.addEventListener("click", () => {
   modal.style.display = "none";
 });
 
+// Cierre al hacer clic fuera del modal
+document.addEventListener("click", function (e) {
+  const esClickDentroDelModal = modal.contains(e.target);
+  const modalVisible = modal.style.display === "block";
 
+  if (!esClickDentroDelModal && modalVisible) {
+    modal.style.display = "none";
+  }
+});
