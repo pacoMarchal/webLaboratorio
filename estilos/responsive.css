@@ -153,7 +153,8 @@
   .ensayos-detallados .bloque-ensayo .numero {
     font-size: 6rem;
     top: 0;
-    transform: translate(-50%, 0);
+    /*transform: translate(-50%, 0);*/
+    border: 1px solid red;
   }
 
   .capacidades-detalladas {
@@ -204,5 +205,6 @@
     padding: 1rem;
   }
 }
+
 
 
