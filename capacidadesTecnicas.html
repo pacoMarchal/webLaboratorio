@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="tituloPagina">Laboratorio de ensayos de radiofrecuencia INTA</title>
+  <link rel="stylesheet" href="estilos/variables.css">
+  <link rel="stylesheet" href="estilos/estilos.css">
+  <link rel="stylesheet" href="estilos/menuSuperior.css">
+  <link rel="stylesheet" href="estilos/slideshowControl.css">
+  <link rel="stylesheet" href="estilos/estilosCapacidades.css">
+  <link rel="stylesheet" href="estilos/responsive.css">
+</head>
+<body>
+  <header class="barra-navegacion">
+    <img src="imagenes/logoInta2.png" alt="Logo INTA" class="logo">
+    <nav class="menu" aria-label="Menú principal de navegación">
+      <button class="boton-menu" aria-label="Abrir menú de navegación" onclick="alternarMenu()">☰</button>
+      <ul id="elementos-menu">
+        <li><a href="index.html" data-i18n="menuInicio">Inicio</a></li>
+        <li class="tiene-submenu">
+          <a href="index.html#ensayos"><span data-i18n="menuEnsayos">Ensayos</span><span> ▾</span></a>
+          <ul class="submenu">
+            <li><a href="ensayos.html#multipactor" data-i18n="menuMultipactor">Multipactor</a></li>
+            <li><a href="ensayos.html#corona" data-i18n="menuCorona">Corona</a></li>
+            <li><a href="ensayos.html#pim" data-i18n="menuPim">PIM</a></li>
+            <li><a href="ensayos.html#powerHandling" data-i18n="menuPowerHandling">Power Handling</a></li>
+          </ul>
+        </li>
+        <li class="tiene-submenu">
+          <a href="index.html#capacidades-tecnicas" class="menu-pagina-actual"><span data-i18n="menuCapacidadesTecnicas">Capacidades Técnicas</span><span> ▾</span></a>
+          <ul class="submenu">
+            <li><a href="#amplificadores" data-i18n="menuAmplificadores">Amplificadores</a></li>
+            <li><a href="#camaras" data-i18n="menuCamaras">Cámaras</a></li>
+            <li><a href="#areaLimpia" data-i18n="menuAreaLimpia">Área limpia</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#misiones" data-i18n="menuMisionesParticipadas">Misiones Participadas</a></li>
+        <li><a href="multimedia.html#multimedia" data-i18n="menuMultimedia">Multimedia</a></li>
+        <li>
+          <label class="switch">
+            <input type="checkbox" id="languageToggle" aria-label="Cambiar idioma">
+            <span class="slider"></span>
+          </label>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <header id="encabezado">
+    <button class="flecha izquierda" aria-label="Mostrar imagen previa">&#10094;</button>
+    <button class="flecha derecha" aria-label="Mostrar imagen posterior">&#10095;</button>
+    <button id="boton-pausa" class="boton-slideshow" aria-label="Pausar presentación imágenes">❚❚</button>
+
+    <h1 class="texto-actividad">
+      INTA RF Power Laboratory
+    </h1>
+  </header>
+
+  <main>
+
+    <section id="alta-potencia">
+      <h2 class="visualmente-oculto">Alta potencia</h2>
+      <div title="Trabajamos con alta potencia" data-i18n-title="titAltaPotencia"><span data-i18n="altaPotencia">ALTA POTENCIA</span></div>
+    </section>
+
+    <section id="capacidades">
+      <header>
+        <h2 data-i18n="menuCapacidadesTecnicas">Capacidades técnicas</h2>
+      </header>
+
+      <div class="capacidades-detalladas">
+
+        <section class="bloque-capacidades grupo1" id="amplificadores">
+          <img src="imagenes/amplificadores.jpg" alt="Fotografía de Amplificadores de radiofrecuancia">
+          <div class="texto izquierda">
+            <h3 data-i18n="menuAmplificadores">Amplificadores</h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores harum natus consectetur labore esse similique facilis ipsum eveniet animi unde nihil, qui enim distinctio illum minima velit officia. Quia soluta voluptatum voluptas. Quasi adipisci facilis magni nesciunt laboriosam perspiciatis, vel delectus suscipit. Asperiores est numquam ipsum velit eveniet iure, cupiditate alias tenetur praesentium eaque cumque, sapiente ea a deserunt pariatur eius voluptates nostrum exercitationem dignissimos doloremque eos? Odit laborum porro architecto aspernatur perspiciatis est perferendis mollitia dolor animi assumenda earum neque illum dolorum voluptatibus, consequatur quae ipsam illo commodi vitae voluptates a aut amet maxime facere corporis. Quis, tempore culpa.
+          </div>
+          <div class="numero">1</div>
+        </section>
+
+        <section class="bloque-capacidades grupo2" id="camaras">
+          <div class="texto derecha">
+            <h3 data-i18n="menuCamaras">Cámaras</h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio adipisci perferendis veritatis nihil? Quidem magnam ut rem nisi eaque obcaecati nemo itaque officia. Consectetur quas enim distinctio eveniet! Accusamus adipisci assumenda laborum delectus harum, quis ipsam asperiores iure illum aperiam atque laudantium. Perferendis eos nostrum sit eligendi sint quidem minus nesciunt, harum fugit. Iure quia aspernatur tempora at labore in dicta a quos harum error rem asperiores debitis ratione, repellat perferendis, impedit aperiam. Ex dicta error facere corporis nobis eum esse quibusdam sequi quidem animi excepturi nam numquam aperiam iusto doloremque facilis, itaque eius in beatae. In voluptatibus modi, eos.
+          </div>
+          <img src="imagenes/camaras.png" alt="Fotografía de cámara de alto vacío">
+          <div class="numero">2</div>
+        </section>
+
+        <section class="bloque-capacidades grupo3" id="areaLimpia">
+          <img src="imagenes/areaLimpia.jpg" alt="Fotografía de un laboratorio de área limpia">
+          <div class="texto izquierda">
+            <h3 data-i18n="menuAreaLimpia">Área limpia</h3>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. A possimus pariatur ea, veniam iusto aspernatur voluptates sapiente ipsam soluta enim reprehenderit, tenetur exercitationem quod porro. Voluptatem, sapiente facere rerum, reiciendis vero quidem perferendis dolores modi blanditiis excepturi eaque, dicta commodi dolore, tenetur ab voluptatibus. Expedita, est accusamus eaque necessitatibus voluptatem qui neque quibusdam animi vel non earum commodi vitae eveniet odio reiciendis obcaecati architecto debitis. Doloribus alias consequuntur saepe ab? Asperiores laboriosam veritatis aliquid odio magnam accusamus suscipit nulla minus, quaerat voluptas porro qui quam ipsam libero maxime praesentium voluptatem voluptatum itaque velit quis ipsa ex animi deserunt beatae fugit!
+          </div>
+          <div class="numero">3</div>
+        </section>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor-footer">
+      <img src="imagenes/logoInta2.png" alt="Logo INTA" class="logo-footer">
+      <address class="info-footer">
+        <p><small>© 2025 INTA - Laboratorio de Ensayos de Radiofrecuencia</small></p>
+        <p>Ctra. Ajalvir, km 4, 28850 Torrejón de Ardoz, Madrid</p>
+      </address>
+      <nav class="enlaces-footer" aria-label="Enlaces legales y de contacto">
+        <a href="javascript:void(0)" data-i18n="footerAviso">Aviso Legal</a>
+        <a href="javascript:void(0)" data-i18n="footerPolitica">Política de Privacidad</a>
+        <a href="javascript:void(0)" data-i18n="footerContacto">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/menuSuperior.js"></script>
+  <script src="js/slideshowCabecera.js"></script>
+  <script src="js/efectoScrollMain.js"></script>
+  <script src="js/scrollUniversal.js"></script>
+  <script src="js/traduccion-es.js"></script>
+  <script src="js/traduccion-en.js"></script>
+  <script src="js/switchIdioma.js"></script>
+</body>
+</html>

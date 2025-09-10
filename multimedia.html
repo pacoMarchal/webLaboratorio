@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="tituloPagina">Laboratorio de ensayos de radiofrecuencia INTA</title>
+  <link rel="stylesheet" href="estilos/variables.css">
+  <link rel="stylesheet" href="estilos/estilos.css">
+  <link rel="stylesheet" href="estilos/menuSuperior.css">
+  <link rel="stylesheet" href="estilos/slideshowControl.css">
+  <link rel="stylesheet" href="estilos/estilosMultimedia.css">
+  <link rel="stylesheet" href="estilos/responsive.css">
+</head>
+<body>
+  <header class="barra-navegacion">
+    <img src="imagenes/logoInta2.png" alt="Logo INTA" class="logo">
+    <nav class="menu" aria-label="Menú principal de navegación">
+      <button class="boton-menu" aria-label="Abrir menú de navegación" onclick="alternarMenu()">☰</button>
+      <ul id="elementos-menu">
+        <li><a href="index.html" data-i18n="menuInicio">Inicio</a></li>
+        <li class="tiene-submenu">
+          <a href="index.html#ensayos"><span data-i18n="menuEnsayos">Ensayos</span><span> ▾</span></a>
+          <ul class="submenu">
+            <li><a href="ensayos.html#multipactor" data-i18n="menuMultipactor">Multipactor</a></li>
+            <li><a href="ensayos.html#corona" data-i18n="menuCorona">Corona</a></li>
+            <li><a href="ensayos.html#pim" data-i18n="menuPim">PIM</a></li>
+            <li><a href="ensayos.html#powerHandling" data-i18n="menuPowerHandling">Power Handling</a></li>
+          </ul>
+        </li>
+        <li class="tiene-submenu">
+          <a href="index.html#capacidades-tecnicas"><span data-i18n="menuCapacidadesTecnicas">Capacidades Técnicas</span><span> ▾</span></a>
+          <ul class="submenu">
+            <li><a href="capacidadesTecnicas.html#amplificadores" data-i18n="menuAmplificadores">Amplificadores</a></li>
+            <li><a href="capacidadesTecnicas.html#camaras" data-i18n="menuCamaras">Cámaras</a></li>
+            <li><a href="capacidadesTecnicas.html#areaLimpia" data-i18n="menuAreaLimpia">Área limpia</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#misiones" data-i18n="menuMisionesParticipadas">Misiones Participadas</a></li>
+        <li><a href="multimedia.html" class="menu-pagina-actual" data-i18n="menuMultimedia">Multimedia</a></li>
+        <li>
+          <label class="switch">
+            <input type="checkbox" id="languageToggle" aria-label="Cambiar idioma">
+            <span class="slider"></span>
+          </label>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <header id="encabezado">
+    <button class="flecha izquierda" aria-label="Mostrar imagen previa">&#10094;</button>
+    <button class="flecha derecha" aria-label="Mostrar imagen posterior">&#10095;</button>
+    <button id="boton-pausa" class="boton-slideshow" aria-label="Pausar presentación imágenes">❚❚</button>
+
+    <h1 class="texto-actividad">
+      INTA RF Power Laboratory
+    </h1>
+  </header>
+
+  <main>
+
+    <section id="alta-potencia">
+      <h2 class="visualmente-oculto">Alta potencia</h2>
+      <div title="Trabajamos con alta potencia" data-i18n-title="titAltaPotencia"><span data-i18n="altaPotencia">ALTA POTENCIA</span></div>
+    </section>
+
+    <section>
+      <header>
+        <h2>Multimedia</h2>
+      </header>
+
+      <div class="multimedia" id="multimedia">
+        <div class="galeria-fotos">
+          <figure>
+            <img src="imagenes/lab.png" alt="Foto 1 de sala limpia">
+            <figcaption>Vista 1 de sala limpia</figcaption>
+          </figure>
+          <figure>
+            <img src="imagenes/lab2.png" alt="Foto 2 de sala limpia">
+            <figcaption>Vista 2 de sala limpia</figcaption>
+          </figure>
+          <figure>
+            <img src="imagenes/lab3.png" alt="Foto 3 de sala limpia">
+            <figcaption>Vista 3 de sala limpia</figcaption>
+          </figure>
+          <figure>
+            <img src="imagenes/anecoica.png" alt="Cámara térmica dentro de cámara anecoica">
+            <figcaption>Cámara de temperatura dentro de cámara anecoica</figcaption>
+          </figure>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor-footer">
+      <img src="imagenes/logoInta2.png" alt="Logo INTA" class="logo-footer">
+      <address class="info-footer">
+        <p><small>© 2025 INTA - Laboratorio de Ensayos de Radiofrecuencia</small></p>
+        <p>Ctra. Ajalvir, km 4, 28850 Torrejón de Ardoz, Madrid</p>
+      </address>
+      <nav class="enlaces-footer" aria-label="Enlaces legales y de contacto">
+        <a href="javascript:void(0)" data-i18n="footerAviso">Aviso Legal</a>
+        <a href="javascript:void(0)" data-i18n="footerPolitica">Política de Privacidad</a>
+        <a href="javascript:void(0)" data-i18n="footerContacto">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div id="zoom-modal" class="modal">
+    <span class="cerrar">&times;</span>
+    <img class="modal-contenido" id="imagen-ampliada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Imagen ampliada">
+  </div>
+
+  <script src="js/menuSuperior.js"></script>
+  <script src="js/slideshowCabecera.js"></script>
+  <script src="js/efectoScrollMain.js"></script>
+  <script src="js/modalImagenes.js"></script>
+  <script src="js/scrollUniversal.js"></script>
+  <script src="js/traduccion-es.js"></script>
+  <script src="js/traduccion-en.js"></script>
+  <script src="js/switchIdioma.js"></script>
+</body>
+</html>

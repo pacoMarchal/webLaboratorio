@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="tituloPagina">Laboratorio de ensayos de radiofrecuencia INTA</title>
+  <link rel="stylesheet" href="estilos/variables.css">
+  <link rel="stylesheet" href="estilos/estilos.css">
+  <link rel="stylesheet" href="estilos/menuSuperior.css">
+  <link rel="stylesheet" href="estilos/slideshowControl.css">
+  <link rel="stylesheet" href="estilos/responsive.css">
+</head>
+<body>
+  <header class="barra-navegacion">
+    <img src="imagenes/logoInta2.png" alt="Logo INTA" class="logo">
+    <nav class="menu" aria-label="Menú principal de navegación">
+      <button class="boton-menu" aria-label="Abrir menú de navegación" onclick="alternarMenu()">☰</button>
+      <ul id="elementos-menu">
+        <li><a href="index.html" class="menu-pagina-actual" aria-current="page" data-i18n="menuInicio">Inicio</a></li>
+        <li class="tiene-submenu">
+          <a href="#ensayos"><span data-i18n="menuEnsayos">Ensayos</span><span> ▾</span></a>
+          <ul class="submenu">
+            <li><a href="ensayos.html#multipactor" data-i18n="menuMultipactor">Multipactor</a></li>
+            <li><a href="ensayos.html#corona" data-i18n="menuCorona">Corona</a></li>
+            <li><a href="ensayos.html#pim" data-i18n="menuPim">PIM</a></li>
+            <li><a href="ensayos.html#powerHandling" data-i18n="menuPowerHandling">Power Handling</a></li>
+          </ul>
+        </li>
+        <li class="tiene-submenu">
+          <a href="#capacidades-tecnicas"><span data-i18n="menuCapacidadesTecnicas">Capacidades Técnicas</span><span> ▾</span></a>
+          <ul class="submenu">
+            <li><a href="capacidadesTecnicas.html#amplificadores" data-i18n="menuAmplificadores">Amplificadores</a></li>
+            <li><a href="capacidadesTecnicas.html#camaras" data-i18n="menuCamaras">Cámaras</a></li>
+            <li><a href="capacidadesTecnicas.html#areaLimpia" data-i18n="menuAreaLimpia">Área limpia</a></li>
+          </ul>
+        </li>
+        <li><a href="#misiones" data-i18n="menuMisionesParticipadas">Misiones Participadas</a></li>
+        <li><a href="multimedia.html#multimedia" data-i18n="menuMultimedia">Multimedia</a></li>
+        <li>
+          <label class="switch">
+            <input type="checkbox" id="languageToggle" aria-label="Cambiar idioma">
+            <span class="slider"></span>
+          </label>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <header id="encabezado">
+    <button class="flecha izquierda" aria-label="Mostrar imagen previa">&#10094;</button>
+    <button class="flecha derecha" aria-label="Mostrar imagen posterior">&#10095;</button>
+    <button id="boton-pausa" class="boton-slideshow" aria-label="Pausar presentación imágenes">❚❚</button>
+
+    <h1 class="texto-actividad">
+      INTA RF Power Laboratory
+    </h1>
+  </header>
+
+
+  <main>
+    <section id="quienes" aria-labelledby="titulo-quienes" itemscope itemtype="https://schema.org/Organization">
+     <header>
+      <h2 id="titulo-quienes" data-i18n="tituloQuienes">Quienes somos</h2>
+    </header>
+    <div class="contenedor-quienes">
+      <article class="quienesSomos texto-quienes">
+        <div class="texto-lateral">
+          <h3 data-i18n="h3Quienes">Laboratorio INTA de radiofrecuencia</h3>
+          <div data-i18n-html="textoQuienes"></div>
+      </div>
+      <div class="imagen-quienes"><img src="imagenes/lab.png" data-i18n-alt="altImagenQuienes" alt="Vista del área limpia del laboratorio de radiofrecuencia del INTA"></div>
+    </article>
+  </div>
+</section>
+
+<section id="alta-potencia">
+  <h2 class="visualmente-oculto">Alta potencia</h2>
+  <div title="Trabajamos con alta potencia" data-i18n-title="titAltaPotencia"><span data-i18n="altaPotencia">ALTA POTENCIA</span></div>
+</section>
+
+<section id="ensayos">
+  <header>
+    <h2 data-i18n="menuEnsayos">Ensayos</h2>
+  </header>
+  <div class="contenedor-ensayos">
+    <div class="ensayos-grid">
+      <article class="ensayo" onclick="window.location.href='ensayos.html#multipactor'">
+        <h3 class="visualmente-oculto">Multipactor</h3>
+        <figure>
+          <img src="imagenes/iconoMultipactor.png" data-i18n-alt="altIconoMultipactor" alt="Icono de Multipactor" title="Multipactor">
+          <figcaption data-i18n="menuMultipactor">Multipactor</figcaption>
+        </figure>
+      </article>
+      <article class="ensayo" onclick="window.location.href='ensayos.html#corona'">
+        <h3 class="visualmente-oculto">Corona</h3>
+        <figure>
+          <img src="imagenes/iconoCorona.png" data-i18n-alt="altIconoCorona" data-i18n-title="titIconoCorona" alt="Icono de Corona" title="Corona">
+          <figcaption data-i18n="menuCorona">Corona</figcaption>
+        </figure>
+      </article>
+      <article class="ensayo" onclick="window.location.href='ensayos.html#pim'">
+        <h3 class="visualmente-oculto">PIM</h3>
+        <figure>
+          <img src="imagenes/iconoPim.png" data-i18n-alt="altIconoPim" alt="Icono de PIM" title="PIM">
+          <figcaption data-i18n="menuPim">PIM</figcaption>
+        </figure>
+      </article>
+      <article class="ensayo" onclick="window.location.href='ensayos.html#powerHandling'">
+        <h3 class="visualmente-oculto">Power Handling</h3>
+        <figure>
+          <img src="imagenes/iconoPowerHandling.png" data-i18n-alt="altIconoPowerHandling" alt="Icono de Power Handling" title="Power handling">
+          <figcaption data-i18n="menuPowerHandling">Power Handling</figcaption>
+        </figure>
+      </article>
+    </div>
+    <div class="imagen-ensayos">
+      <img src="imagenes/anecoica.png" data-i18n-alt="altImagenEnsayos" data-i18n-title="titImagenEnsayos" alt="Foto de cámara anecoica con cámara térmica dentro">
+    </div>
+  </div>
+
+</section>
+
+<section id="capacidades-tecnicas">
+  <header>
+    <h2 data-i18n="menuCapacidadesTecnicas">Capacidades Técnicas</h2>
+  </header>
+
+  <div class="contenedor-capacidades">
+    <div class="capacidades-grid">
+      <article class="capacidad" onclick="window.location.assign('capacidadesTecnicas.html#amplificadores')">
+        <h3 class="visualmente-oculto">Amplificadores</h3>
+        <figure>
+          <img src="imagenes/iconoAmplificadores.jpg" data-i18n-alt="altIconoAmplificadores" data-i18n-title="titIconoAmplificadores" alt="Icono de Amplificadores" title="Amplificadores">
+          <figcaption data-i18n="menuAmplificadores">Amplificadores</figcaption>
+        </figure>
+      </article>
+      <article class="capacidad" onclick="window.location.assign('capacidadesTecnicas.html#camaras')">
+        <h3 class="visualmente-oculto">Cámaras</h3>
+        <figure>
+          <img src="imagenes/iconoCamaras.jpg" data-i18n-alt="altIconoCamaras" data-i18n-title="titIconoCamaras" alt="Icono de Cámaras" title="Cámaras de vacío">
+          <figcaption data-i18n="menuCamaras">Cámaras</figcaption>
+        </figure>
+      </article>
+      <article class="capacidad" onclick="window.location.assign('capacidadesTecnicas.html#areaLimpia')">
+        <h3 class="visualmente-oculto">Área limpia</h3>
+        <figure>
+          <img src="imagenes/iconoAreaLimpia.jpg" data-i18n-alt="altIconoAreaLimpia" data-i18n-title="titIconoAreaLimpia" alt="Icono de Área limpia" title="Área limpia">
+          <figcaption data-i18n="menuAreaLimpia">Área limpia</figcaption>
+        </figure>
+      </article>
+    </div>
+    <div class="imagen-capacidades"><img src="imagenes/lab2.png" data-i18n-alt="altImagenCapacidades" data-i18n-title="titImagenCapacidades" alt="Foto de sala limpia con cámara de vacío"></div>
+  </div>
+
+</section>
+
+<section id="misiones">
+  <header>
+    <h2 data-i18n="menuMisionesParticipadas">Misiones Participadas</h2>
+  </header>
+  <div class="carrusel-misiones">
+    <button class="mision-flecha" aria-label="Desplazar a misión previa">&#10094;</button>
+    <div class="carrusel-ventana">
+      <div class="carrusel-imagenes">
+        <img src="imagenes/misiones01.png" data-i18n-alt="altCarrusel01" data-i18n-title="titCarrusel01" alt="Antena estrack de la ESA">
+        <img src="imagenes/misiones02.png" data-i18n-alt="altCarrusel02" data-i18n-title="titCarrusel02" alt="Logo de la sonda Galileo">
+        <img src="imagenes/misiones03_2.png" data-i18n-alt="altCarrusel03" data-i18n-title="titCarrusel03" alt="Logo de Juice de la ESA">
+        <img src="imagenes/misiones04.png" data-i18n-alt="altCarrusel04" data-i18n-title="titCarrusel04" alt="Logo de la Mars Science Laboratory de la ESA y la NASA">
+        <img src="imagenes/misiones05.png" data-i18n-alt="altCarrusel05" data-i18n-title="titCarrusel05" alt="Gran Antena europea espacial">
+      </div>
+    </div>
+    <button class="mision-flecha" aria-label="Desplazar a misión posterior">&#10095;</button>
+  </div>
+</section>
+
+
+</main>
+
+<footer class="pie">
+  <div class="contenedor-footer">
+    <img src="imagenes/logoInta2.png" alt="Logo INTA" class="logo-footer">
+    <address class="info-footer">
+      <p><small>© 2025 INTA - Laboratorio de Ensayos de Radiofrecuencia</small></p>
+      <p>Ctra. Ajalvir, km 4, 28850 Torrejón de Ardoz, Madrid</p>
+    </address>
+    <nav class="enlaces-footer" aria-label="Enlaces legales y de contacto">
+      <a href="javascript:void(0)" data-i18n="footerAviso">Aviso Legal</a>
+      <a href="javascript:void(0)" data-i18n="footerPolitica">Política de Privacidad</a>
+      <a href="javascript:void(0)" data-i18n="footerContacto">Contacto</a>
+    </nav>
+  </div>
+</footer>
+<div id="zoom-modal" class="modal">
+  <span class="cerrar">&times;</span>
+  <img class="modal-contenido" id="imagen-ampliada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Imagen ampliada">
+</div>
+
+
+<script src="js/menuSuperior.js"></script>
+<script src="js/slideshowCabecera.js"></script>
+<script src="js/efectoScrollMain.js"></script>
+<script src="js/carruselMisiones.js"></script>
+<script src="js/modalImagenes.js"></script>
+<script src="js/scrollUniversal.js"></script>
+<script src="js/traduccion-es.js"></script>
+<script src="js/traduccion-en.js"></script>
+<script src="js/switchIdioma.js"></script>
+
+</body>
+</html>
