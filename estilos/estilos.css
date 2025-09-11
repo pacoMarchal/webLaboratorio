@@ -114,7 +114,7 @@ h1.texto-actividad {
   text-align: center;
   font-size: clamp(16px, 3.1vw, 37px);
   font-variant: all-small-caps;
-  font-weight: 100;
+  /*font-weight: 100;*/
   padding: 1.5rem;
   background: linear-gradient(to right, #21659f80, #6c326980);
   color: var(--menuTextoHover);
@@ -625,4 +625,5 @@ address.info-footer {
     transform: scale(1.0);
     opacity: 1;
   }
+
 }
