@@ -117,8 +117,7 @@ h1.texto-actividad {
   /*font-weight: 100;*/
   padding: 1.5rem;
   background: linear-gradient(to right, #21659f80, #6c326980);
-  /*color: var(--menuTextoHover);*/
-  color: blue;
+  color: var(--menuTextoHover);
   letter-spacing: 1.3rem;
   text-shadow: 0 0 3px var(--mainQuienesFondoTexto);
   border-top: 1px solid var(--slideBotonesFondo);
@@ -628,4 +627,5 @@ address.info-footer {
   }
 
 }
+
 
