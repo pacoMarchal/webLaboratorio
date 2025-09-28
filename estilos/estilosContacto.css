@@ -1,0 +1,29 @@
+h2::after{
+  background-color: var(--mainCapacidadesLineaSubH2);
+}
+
+.bloques-contacto {
+  background-color: var(--menuFondo);
+  padding: 3rem;
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1.5rem;
+  border-radius: 10px;
+}
+
+.bloques-contacto .dato {
+  background-color: #111;
+  padding: 1rem 1.2rem;
+  border: 2px solid var(--mainEnsayosLineaSubH2);
+  border-radius: 8px;
+  color: white;
+  text-align: left;
+}
+
+.bloques-contacto .dato strong {
+  display: block;
+  color: var(--menuTextoHover);
+  margin-bottom: 0.3rem;
+}

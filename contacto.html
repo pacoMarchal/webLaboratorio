@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="estilos/estilos.css">
   <link rel="stylesheet" href="estilos/menuSuperior.css">
   <link rel="stylesheet" href="estilos/slideshowControl.css">
-  <link rel="stylesheet" href="estilos/estilosMultimedia.css">
+  <link rel="stylesheet" href="estilos/estilosContacto.css">
   <link rel="stylesheet" href="estilos/responsive.css">
 </head>
 <body>
@@ -36,7 +36,7 @@
           </ul>
         </li>
         <li><a href="index.html#misiones" data-i18n="menuMisionesParticipadas">Misiones Participadas</a></li>
-        <li><a href="multimedia.html#multimedia" class="menu-pagina-actual" data-i18n="menuMultimedia">Multimedia</a></li>
+        <li><a href="multimedia.html#multimedia" data-i18n="menuMultimedia">Multimedia</a></li>
         <li>
           <label class="switch">
             <input type="checkbox" id="languageToggle" aria-label="Cambiar idioma">
@@ -66,30 +66,43 @@
 
     <section>
       <header>
-        <h2>Multimedia</h2>
+        <h2 data-i18n="contacto">Contacto</h2>
       </header>
 
-      <div class="multimedia" id="multimedia">
-        <div class="galeria-fotos">
-          <figure>
-            <img src="imagenes/lab.png" alt="Foto 1 de sala limpia">
-            <figcaption data-i18n="multimediaImagen01">Vista 1 de sala limpia</figcaption>
-          </figure>
-          <figure>
-            <img src="imagenes/lab2.png" alt="Foto 2 de sala limpia">
-            <figcaption data-i18n="multimediaImagen02">Vista 2 de sala limpia</figcaption>
-          </figure>
-          <figure>
-            <img src="imagenes/lab3.png" alt="Foto 3 de sala limpia">
-            <figcaption data-i18n="multimediaImagen03">Vista 3 de sala limpia</figcaption>
-          </figure>
-          <figure>
-            <img src="imagenes/anecoica.png" alt="Cámara térmica dentro de cámara anecoica">
-            <figcaption data-i18n="multimediaImagen04">Cámara de temperatura dentro de cámara anecoica</figcaption>
-          </figure>
+      <div class="bloques-contacto" id="contacto">
+          <div class="dato">
+            <strong data-i18n="contactoResponsable">Responsable del Servicio</strong>
+            Luis Fernando Sánchez Miró
+          </div>
+          <div class="dato">
+            <strong>E-mail</strong>
+            <a href="mailto:ensayoselectricos@inta.es">ensayoselectricos@inta.es</a>
+          </div>
+          <div class="dato">
+            <strong data-i18n="contactoTelefonos">Teléfonos</strong>
+            [+34] 91 520 1218
+          </div>
+          <div class="dato">
+            <strong data-i18n="contactoLaboratorio">Laboratorio / Unidad</strong>
+            <span data-i18n="contactoLaboratorioSpan">Laboratorio de potencia de RF</span>
+          </div>
+          <div class="dato">
+            <strong data-i18n="contactoArea">Área</strong>
+            <span data-i18n="contactoAreaSpan">Área de Ensayos Eléctricos (4930)</span>
+          </div>
+          <div class="dato">
+            <strong data-i18n="contactoDepartamento">Departamento</strong>
+            <span data-i18n="contactoDepartamentoSpan">Departamento de Ensayos de Equipos y Sistemas (4900)</span>
+          </div>
+          <div class="dato">
+            <strong data-i18n="contactoSubdireccion">Subdirección</strong>
+            <span data-i18n="contactoSubdireccionSpan">Subdirección General de Sistemas Espaciales (4000)</span>
+          </div>
+          <div class="dato">
+            <strong data-i18n="contactoLocalizacion">Localización</strong>
+            <span data-i18n="contactoLocalizacionSpan">Sede Central INTA Torrejón de Ardoz</span>
+          </div>
         </div>
-
-      </div>
 
     </section>
 
@@ -105,23 +118,18 @@
       <nav class="enlaces-footer" aria-label="Enlaces legales y de contacto">
         <a href="javascript:void(0)" data-i18n="footerAviso">Aviso Legal</a>
         <a href="javascript:void(0)" data-i18n="footerPolitica">Política de Privacidad</a>
-        <a href="contacto.html#contacto" data-i18n="contacto">Contacto</a>
+        <a href="javascript:void(0)" data-i18n="contacto">Contacto</a>
       </nav>
     </div>
   </footer>
 
-  <div id="zoom-modal" class="modal">
-    <span class="cerrar">&times;</span>
-    <img class="modal-contenido" id="imagen-ampliada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Imagen ampliada">
-  </div>
-
   <script src="js/menuSuperior.js"></script>
   <script src="js/slideshowCabecera.js"></script>
   <script src="js/efectoScrollMain.js"></script>
-  <script src="js/modalImagenes.js"></script>
   <script src="js/scrollUniversal.js"></script>
   <script src="js/traduccion-es.js"></script>
   <script src="js/traduccion-en.js"></script>
   <script src="js/switchIdioma.js"></script>
+
 </body>
 </html>

@@ -303,7 +303,8 @@ section#quienes {
 =     ENSAYOS / CAPACIDADES / MISIONES
 ===========================*/
 .contenedor-ensayos,
-.contenedor-capacidades {
+.contenedor-capacidades,
+.bloques-contacto {
   view-timeline-name: --caja;
   view-timeline-axis: block;
   animation-timeline: --caja;
@@ -534,13 +535,19 @@ address.info-footer {
   margin-top: 0.5rem;
 }
 
+.dato a {
+  color: var(--menuTextoColor);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
 .enlaces-footer a {
   color: var(--mainEnsayosTextoIconos);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.enlaces-footer a:hover {
+.enlaces-footer a:hover, .dato a:hover {
   color: var(--mainEnsayosLineaSubH2);
 }
 

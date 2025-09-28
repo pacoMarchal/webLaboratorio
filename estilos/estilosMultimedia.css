@@ -1,3 +1,7 @@
+h2::after{
+  background-color: var(--mainCapacidadesLineaSubH2);
+}
+
 .multimedia {
     width: 90%;
     margin: auto;
