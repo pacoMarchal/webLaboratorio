@@ -580,7 +580,7 @@ address.info-footer {
   max-height: 90vh;         
   object-fit: contain;
   border-radius: 8px;
-  box-shadow: 0 0 0px 15px rgb(0 0 0 / 80%);
+  box-shadow: 0 0 0px 100vh rgb(0 0 0 / 80%);
   margin: auto;
 }
 
@@ -632,4 +632,5 @@ address.info-footer {
     transform: scale(1.0);
     opacity: 1;
   }
+
 }
