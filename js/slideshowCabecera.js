@@ -1,9 +1,11 @@
 const encabezado = document.getElementById("encabezado");
 const imagenesFondo = [
   "imagenes/fondoCabecera.jpg",
-  "imagenes/corona.jpg",
-  "imagenes/fondoAnecoica.png",
   "imagenes/multipactor.jpg",
+  "imagenes/fondoAntena.jpg",
+  "imagenes/fondoPanel.jpg",
+  "imagenes/fondoAnecoica.png",
+  "imagenes/corona.jpg",
   "imagenes/pim.jpg",
   "imagenes/powerHandling.jpg"
 ];
@@ -60,3 +62,4 @@ botonPausa.addEventListener("click", () => {
 
 mostrarImagen(indiceActual);
 iniciarCambioAutomatico();
+
