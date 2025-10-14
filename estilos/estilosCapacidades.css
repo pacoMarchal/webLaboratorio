@@ -17,8 +17,8 @@ h2::after{
 .capacidades-detalladas .bloque-capacidades {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
   gap: 2rem;
   padding-top: 4rem; /* cambia de padding-bottom */
 }
@@ -52,7 +52,7 @@ h2::after{
 
 /* Imagen */
 .bloque-capacidades img {
-  width: 40%;
+  width: 45%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 6px 12px rgba(0,0,0,0.3);
@@ -71,6 +71,12 @@ h2::after{
   font-size: 1.1rem;
   line-height: 1.5;
   max-width: 45%;
+}
+
+.contenedor-bloques {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
 }
 
 .texto.izquierda {

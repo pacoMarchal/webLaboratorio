@@ -10,7 +10,7 @@ if (carrusel && imagenes.length > 0 && flechaIzq && flechaDer) {
 
   // Calcula y aplica el desplazamiento horizontal
   function actualizarCarrusel() {
-    const anchoImagen = imagenes[0].offsetWidth + 16; // 16px de margen entre imágenes
+    const anchoImagen = imagenes[0].offsetWidth + 20; // 20px de margen entre imágenes
     const maxDesplazamiento = (imagenes.length - visibles) * anchoImagen;
     const desplazamiento = Math.min(indice * anchoImagen, maxDesplazamiento);
     carrusel.style.transform = `translateX(-${desplazamiento}px)`;

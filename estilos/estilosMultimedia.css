@@ -4,7 +4,7 @@ h2::after{
 
 .multimedia {
     width: 90%;
-    margin: auto;
+    margin: 1rem auto;
 }
 .galeria-fotos {
   display: grid;
@@ -15,6 +15,22 @@ h2::after{
   background-color: var(--menuFondo);
   border: 1px solid var(--mainEnsayosLineaSubH2);
   border-radius: 10px;
+  align-content: start;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#pdf{
+  padding: unset;
+}
+
+.galeria-fotos a {
+  color: var(--menuTextoHover);
+  font-size: clamp(10px, 2.3vw, 32px);
+}
+
+.galeria-fotos a:hover {
+  color: var(--mainEnsayosLineaSubH2);
 }
 
 .galeria-fotos figure {
@@ -35,10 +51,21 @@ h2::after{
   height: 250px;
   object-fit: cover;
   display: block;
+  cursor: pointer;
 }
 
 .galeria-fotos figcaption {
-  font-size: clamp(0.8rem, 1vw, 1rem);
+  font-size: clamp(8px, 0.8vw, 13px);
   color: var(--mainEnsayosTextoIconos);
   padding: 0.5rem;
+}
+.figcaption-pdf {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.figcaption-pdf .icono-pdf {
+  width: 34px;
+  height: auto;
 }

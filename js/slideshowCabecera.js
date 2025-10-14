@@ -62,4 +62,3 @@ botonPausa.addEventListener("click", () => {
 
 mostrarImagen(indiceActual);
 iniciarCambioAutomatico();
-

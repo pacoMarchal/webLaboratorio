@@ -194,19 +194,27 @@ section.visible {
 ===========================*/
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-.contenedor-quienes {
+.contenedor-quienes,
+.contenedor-introduccion {
   display: flex;
   justify-content: center;
 }
 
-.quienesSomos {
+.quienesSomos,
+.introduccion {
   display: flex;
   flex-wrap: wrap;
 }
 
+.introduccion {
+  flex-direction: row-reverse;
+}
+
 .texto-lateral,
-.imagen-quienes {
+.imagen-quienes,
+.imagen-introduccion {
   flex: 1 1 50%;
+  border-radius: 10px;
 }
 
 .texto-lateral {
@@ -215,15 +223,20 @@ section.visible {
   background: var(--mainQuienesFondoTexto);
 }
 
-.imagen-quienes {
-  background-image: url("../imagenes/lab.png");
+.imagen-quienes,
+.imagen-introduccion {
+  background-image: url("../imagenes/lab.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
 }
 
+.imagen-introduccion{
+  background-image: url("../imagenes/fotoMisionGalileo.jpg");
+}
 
-.imagen-quienes img {
+.imagen-quienes img,
+.imagen-introduccion img {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -234,13 +247,15 @@ section.visible {
   overflow: hidden;
 }
 
-section#quienes {
+section#quienes, 
+section#introduccion {
   background-color: var(--mainQuienes);
   padding: 3rem;
   margin: 0;
 }
 
-#quienes h2 {
+#quienes h2, 
+#introduccion h2 {
   color: var(--menuTextoHover);
   text-align: left;
   display: block;
@@ -249,11 +264,13 @@ section#quienes {
   padding: 1rem;
 }
 
-#quienes h2::after {
+#quienes h2::after, 
+#introduccion h2::after {
   content: none;
 }
 
-.quienesSomos h3 {
+.quienesSomos h3,
+.introduccion h3 {
   font-size: clamp(1rem, 1.1rem + 0.5vw, 1.3rem);
   font-weight: 500;
   color: var(--menuTextoHover);
@@ -262,7 +279,8 @@ section#quienes {
   padding: 1rem;
 }
 
-#quienes p {
+#quienes p, 
+#introduccion p {
   color: white;
   padding: 1rem;
 }
@@ -432,6 +450,58 @@ figcaption {
   opacity: 1;
 }
 
+/*======================================================
+=         TABLA CAPACIDADES TÉCNICAS/CÁMARAS          =
+========================================================*/
+
+.tabla{
+  order: 4;
+}
+
+table {
+  width: max-content;
+  margin: 1rem;
+  text-align: center;
+  color: var(--menuTextoColor);
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  outline: 1px solid var(--mainCapacidadesLineaSubH2);
+}
+
+th {
+  background-color: var(--mainCapacidadesLineaSubH2);
+  color: var(--responsiveMenuBoton);
+  padding: 0.75rem;
+  border: 1px solid var(--mainQuienes);
+}
+
+td {
+  padding: 0.75rem;
+  border: 1px solid var(--mainQuienes);
+}
+
+tbody td[rowspan] {
+  background-color: var(--mainEnsayosLineaSubH2);
+  font-weight: bold;
+  color: var(--responsiveMenuFondo);
+}
+
+tbody tr:nth-child(even) td:not([rowspan]) {
+  background-color: var(--slideBotonesFondo);
+}
+
+tbody tr:nth-child(odd) td:not([rowspan]) {
+  background-color: var(--mainQuienesFondoTexto);
+}
+/* Por defecto: mostrar tabla, ocultar imagen */
+.tabla-original {
+  display: block;
+}
+.tabla-imagen {
+  display: none;
+}
+
 /*===========================
 =         MISIONES          =
 ===========================*/
@@ -439,6 +509,39 @@ figcaption {
   background-color: var(--mainMisionesFondo);
   padding: 4rem 0;
   text-align: center;
+}
+
+.listado {
+  list-style: none;
+  text-align: left;
+  max-width: 900px;
+  margin: auto;
+  background-color: var(--mainQuienesFondoTexto);
+  border-radius: 10px;
+  padding: 40px 30px;
+}
+
+.listado li {
+  color: var(--menuTextoHover);
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin: 0 0 8px;
+  display: flex;
+  align-items: baseline;
+}
+
+
+.listado .numeroItem {
+  background-color: var(--menuTextoHover);
+  color: var(--mainMisionesFondo);
+  width: 1.5rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px 0 0;
 }
 
 .carrusel-misiones {
@@ -477,6 +580,7 @@ figcaption {
   flex-shrink: 0;
   border-radius: 10px;
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 
@@ -541,13 +645,15 @@ address.info-footer {
   transition: color 0.3s ease;
 }
 
-.enlaces-footer a {
+.enlaces-footer a, 
+.galeria-fotos a {
   color: var(--mainEnsayosTextoIconos);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.enlaces-footer a:hover, .dato a:hover {
+.enlaces-footer a:hover, 
+.dato a:hover {
   color: var(--mainEnsayosLineaSubH2);
 }
 
@@ -568,7 +674,7 @@ address.info-footer {
   max-width: 90vw;
   max-height: 90vh;
 /*  overflow: hidden;*/
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 
 /* Imagen dentro del modal */
@@ -632,5 +738,4 @@ address.info-footer {
     transform: scale(1.0);
     opacity: 1;
   }
-
 }

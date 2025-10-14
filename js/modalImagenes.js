@@ -3,14 +3,23 @@ const modal = document.getElementById("zoom-modal");
 const modalImg = document.getElementById("imagen-ampliada");
 const cerrar = document.querySelector(".cerrar");
 
-// Función para abrir el modal con la imagen clicada
+// Función para abrir el modal con la imagen clicada o abrir PDF en nueva pestaña
 function abrirModal(img) {
-  if (modal && modalImg) {
-    modalImg.src = img.src;       // Muestra la imagen clicada
-    modalImg.alt = img.alt;       // Copia el texto alternativo
-    setTimeout(() => {
-      modal.style.display = "block"; // Abre el modal con un pequeño retardo
-    }, 10);
+  const src = img.getAttribute("data-src") || img.src;
+  if (!src) return;
+
+  const extension = src.split('.').pop().toLowerCase();console.log(extension);
+
+  if (extension === "pdf" || /^com.*$/.test(extension)) {
+    window.open(src, "_blank"); // Abre el PDF en una nueva pestaña
+  } else {
+    if (modal && modalImg) {
+      modalImg.src = src;       // Muestra la imagen clicada
+      modalImg.alt = img.alt;   // Copia el texto alternativo
+      setTimeout(() => {
+        modal.style.display = "block"; // Abre el modal con un pequeño retardo
+      }, 10);
+    }
   }
 }
 
