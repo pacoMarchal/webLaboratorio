@@ -20,18 +20,6 @@
   }
 }
 
-/* En pantallas pequeñas: ocultar tabla, mostrar imagen */
-@media (max-width: 400px) {
-  .tabla-original {
-    display: none;
-  }
-  .tabla-imagen {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-}
-
 /* Mediano: hasta 550px */
 @media (max-width: 550px) {
   .contenedor-quienes,

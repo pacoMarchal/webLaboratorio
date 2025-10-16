@@ -454,30 +454,62 @@ figcaption {
 =         TABLA CAPACIDADES TÉCNICAS/CÁMARAS          =
 ========================================================*/
 
-.tabla{
+.contenedor-tabla{
+  display: grid;
+  max-width: 100%;
+  max-height: 400px;
+  overflow: auto;
+  justify-items: center;
   order: 4;
 }
 
 table {
   width: max-content;
-  margin: 1rem;
+  margin: auto;
   text-align: center;
   color: var(--menuTextoColor);
   border-collapse: collapse;
-  border-radius: 8px;
-  overflow: hidden;
-  outline: 1px solid var(--mainCapacidadesLineaSubH2);
+}
+
+.span-caption{
+  display: block;
+  top: 0;
+  position: sticky;
+  background-color: var(--mainEnsayosLineaSubH2);
+  width: 100%;
+  height: 2rem;
+  border-radius: 8px 8px 0 0;
+  font-style: italic;
+  font-weight: 500;
+  align-content: center;
+  z-index: 1;
+}
+
+caption {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--mainQuienesFondoTexto);
+  background-color: var(--mainEnsayosLineaSubH2);
+  border-radius: 10px 10px 0 0;
+}
+
+#tabla-amplificadores th,
+th {
+  position: sticky;
+  top: 2rem;
+  background-color: var(--menuTextoHover);
+  color: var(--mainQuienesFondoTexto);
+  padding: 1rem;
+  border: 1px solid var(--mainQuienes);
+  border-top: 0;
 }
 
 th {
-  background-color: var(--mainCapacidadesLineaSubH2);
-  color: var(--responsiveMenuBoton);
-  padding: 0.75rem;
-  border: 1px solid var(--mainQuienes);
+  top: 0;
 }
 
 td {
-  padding: 0.75rem;
+  padding: 0.25rem;
   border: 1px solid var(--mainQuienes);
 }
 
@@ -493,13 +525,6 @@ tbody tr:nth-child(even) td:not([rowspan]) {
 
 tbody tr:nth-child(odd) td:not([rowspan]) {
   background-color: var(--mainQuienesFondoTexto);
-}
-/* Por defecto: mostrar tabla, ocultar imagen */
-.tabla-original {
-  display: block;
-}
-.tabla-imagen {
-  display: none;
 }
 
 /*===========================
@@ -647,7 +672,7 @@ address.info-footer {
 
 .enlaces-footer a, 
 .galeria-fotos a {
-  color: var(--mainEnsayosTextoIconos);
+  color: var(--menuTextoHover);
   text-decoration: none;
   transition: color 0.3s ease;
 }
