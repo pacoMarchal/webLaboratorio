@@ -17,6 +17,7 @@ const traduccionEs = {
   tituloIntroduccion:"Alta potencia en radiofrecuencia",
   h3Quienes: "Laboratorio INTA de radiofrecuencia",
   h3Introduccion:"Introducción a los efectos de la alta potencia en RF",
+  h3NuestrosAmplificadores: "Nuestros Amplificadores",
   altaPotencia: "Alta Potencia",
   titAltaPotencia: "Trabajamos con alta potencia",
   titImagenEnsayos: "Foto de cámara anecoica con cámara térmica dentro",
@@ -35,6 +36,8 @@ const traduccionEs = {
   altIconoAreaLimpia: "Icono de área limpia",
   altImagenEnsayos: "Foto de cámara anecoica con cámara térmica dentro",
   altImagenCapacidades: "Foto de sala limpia con cámara de vacío",
+  captionTablaAmplificadores: "Tabla de amplificadores y características disponibles en nuestro laboratorio",
+  captionTablaCamaras: "Nuestras cámaras de vacío",
   altCarrusel01: "Antena estrack de la ESA",
   altCarrusel02: "Logo de la sonda Galileo",
   altCarrusel03: "Logo de Juice de la ESA",
@@ -125,5 +128,9 @@ const traduccionEs = {
   `,
   textoAreaLimpia:`
     Las salas limpias son entornos controlados fundamentales para la fabricación y ensayo de componentes RF destinados a aplicaciones críticas como PIM, multipactor, corona y power handling. Estas áreas minimizan la presencia de partículas, humedad y contaminantes que podrían alterar los resultados de las pruebas o dañar equipos sensibles. En ellas se ensamblan, manipulan y verifican dispositivos de alta frecuencia bajo estrictas condiciones de limpieza y control ambiental. Su diseño cumple con normativas ISO, garantizando la integridad de los ensayos y la fiabilidad de los productos. Son esenciales en sectores aeroespacial, defensa y telecomunicaciones, donde la precisión y la pureza son imprescindibles.
+  `,
+  textoNuestrosAmplificadores:`
+    Contamos con una amplia gama de amplificadores de radiofrecuencia diseñados para cubrir desde bandas bajas hasta frecuencias milimétricas, con potencias que alcanzan varios kilovatios. Nuestra selección incluye modelos de fabricantes líderes como ENI, LogiMetrics, Amplifier Research, BONN Elektronik, ETM, CPI y TMD, entre otros. Estos equipos ofrecen configuraciones adaptadas a distintas interfaces, rangos de frecuencia y tipos de alimentación, garantizando compatibilidad con los requisitos más exigentes de ensayo.<br>
+    Cada amplificador ha sido seleccionado por su rendimiento en entornos de prueba críticos, incluyendo cámaras de vacío térmico, bancos de ensayo multipactor y sistemas de validación de conectores y materiales RF. La tabla siguiente presenta las especificaciones clave de nuestros modelos disponibles, facilitando la elección del equipo más adecuado según la aplicación técnica y el rango de operación requerido.
   `
     };

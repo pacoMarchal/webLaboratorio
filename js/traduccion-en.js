@@ -17,6 +17,7 @@ const traduccionEn = {
   tituloIntroduccion:"High power in radio frequency",
   h3Quienes: "INTA RF power laboratory",
   h3Introduccion:"Introduction on RF High-Power effects",
+  h3NuestrosAmplificadores: "Our Amplifiers",
   altaPotencia: "High Power",
   titAltaPotencia: "We work with high power",
   titImagenEnsayos: "Anechoic chamber photo with thermal camera inside",
@@ -35,6 +36,8 @@ const traduccionEn = {
   altIconoAreaLimpia: "Clean room icon",
   altImagenEnsayos: "Photo of anechoic chamber with thermal chamber inside",
   altImagenCapacidades: "Clean room photo with vacuum chamber",
+  captionTablaAmplificadores: "Table of Amplifiers and Specifications Available in Our Laboratory",
+  captionTablaCamaras: "Our Vacuum Chambers",
   altCarrusel01: "ESA's estrack antenna",
   altCarrusel02: "Galileo probe logo",
   altCarrusel03: "ESA Juice Logo",
@@ -125,5 +128,9 @@ const traduccionEn = {
   `,
   textoAreaLimpia:`
     Clean rooms are controlled environments essential for the manufacturing and testing of RF components intended for critical applications such as PIM, multipactor, corona, and power handling. These areas minimize the presence of particles, moisture, and contaminants that could affect test results or damage sensitive equipment. High-frequency devices are assembled, handled, and verified under strict cleanliness and environmental control conditions. Their design complies with ISO standards, ensuring the integrity of tests and the reliability of products. They are vital in aerospace, defense, and telecommunications sectors, where precision and purity are indispensable.
+  `,
+  textoNuestrosAmplificadores:`
+    We offer a wide range of radiofrequency amplifiers designed to cover everything from low bands to millimeter-wave frequencies, with power levels reaching several kilowatts. Our selection includes models from leading manufacturers such as ENI, LogiMetrics, Amplifier Research, BONN Elektronik, ETM, CPI, and TMD, among others. These units feature configurations tailored to various interfaces, frequency ranges, and power supply types, ensuring compatibility with the most demanding testing requirements.<br>
+    Each amplifier has been selected for its performance in critical test environments, including thermal vacuum chambers, multipactor test benches, and RF connector and material validation systems. The table below presents the key specifications of our available models, making it easier to choose the most suitable equipment based on the technical application and required operating range.
   `
 };
