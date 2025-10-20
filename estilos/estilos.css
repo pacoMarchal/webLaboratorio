@@ -513,7 +513,8 @@ td {
   border: 1px solid var(--mainQuienes);
 }
 
-tbody td[rowspan] {
+tbody td[rowspan],
+.tabla-original.anecoica tr td:first-child {
   background-color: var(--mainEnsayosLineaSubH2);
   font-weight: bold;
   color: var(--responsiveMenuFondo);
@@ -671,14 +672,16 @@ address.info-footer {
 }
 
 .enlaces-footer a, 
-.galeria-fotos a {
+.galeria-fotos a,
+.contenedor-bloques2 a {
   color: var(--menuTextoHover);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .enlaces-footer a:hover, 
-.dato a:hover {
+.dato a:hover,
+.contenedor-bloques2 a:hover {
   color: var(--mainEnsayosLineaSubH2);
 }
 

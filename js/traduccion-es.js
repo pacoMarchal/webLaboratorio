@@ -18,6 +18,8 @@ const traduccionEs = {
   h3Quienes: "Laboratorio INTA de radiofrecuencia",
   h3Introduccion:"Introducción a los efectos de la alta potencia en RF",
   h3NuestrosAmplificadores: "Nuestros Amplificadores",
+  h3NuestraSalaLimpia: "Nuestra sala limpia",
+  h3NuestrasCamarasVacio: "Nuestras cámaras de vacío",
   altaPotencia: "Alta Potencia",
   titAltaPotencia: "Trabajamos con alta potencia",
   titImagenEnsayos: "Foto de cámara anecoica con cámara térmica dentro",
@@ -37,7 +39,7 @@ const traduccionEs = {
   altImagenEnsayos: "Foto de cámara anecoica con cámara térmica dentro",
   altImagenCapacidades: "Foto de sala limpia con cámara de vacío",
   captionTablaAmplificadores: "Tabla de amplificadores y características disponibles en nuestro laboratorio",
-  captionTablaCamaras: "Nuestras cámaras de vacío",
+  captionTablaCamaras: "Tabla de características",
   altCarrusel01: "Antena estrack de la ESA",
   altCarrusel02: "Logo de la sonda Galileo",
   altCarrusel03: "Logo de Juice de la ESA",
@@ -52,6 +54,10 @@ const traduccionEs = {
   multimediaSatelite: "Satélite de la Misión Galileo",
   multimediaHps: "Enlace a web de HPS para ver película en Youtube",
   multimediaPdfPresentacion: "PDF de presentación del laboratorio",
+  multimediaPdfMulcopower: "PDF de la cámara de vacío Mulcopower",
+  multimediaPdfTVC1: "PDF de la cámara de vacío TVC1 Cosmos-01",
+  multimediaPdfTVC2: "PDF de la cámara de vacío TVC2 Cosmos-02",
+  multimediaPdfMontena: "PDF de la cámara de PIM anecoica Montena",
   contacto: "Contacto",
   contactoResponsable: "Responsable del servicio",
   contactoTelefonos: "Teléfonos",
@@ -72,22 +78,20 @@ const traduccionEs = {
   textoQuienes: `
     <p itemprop='description'>
        El INTA dispone en su laboratorio de ensayos de potencia de RF de instalaciones para llevar a cabo ensayos, análisis y pruebas de tipo electrónico y de RF destinados a evaluar, calificar y certificar equipos, subsistemas y sistemas de aplicación aeroespacial, militar y civil.
-     </p>
-     <p>
+    </p>
+    <p>
       Así mismo, también se presta asesoramiento técnico a la industria y se desarrollan algunas especificaciones en el marco de sus competencias.
     </p>
     <p>
-
       Los Laboratorios en los que se realizan los ensayos de Potencia de RF disponen de un sistema de calidad establecido que cumple con la norma UNE-EN ISO/IEC 17025 para laboratorios de ensayo.
     </p>
     <p>
       Los datos obtenidos a través de estos ensayos permiten a la industria y a distintos organismos de la administración obtener la calificación y/o certificación sobre la validez del funcionamiento de un sistema completo o alguno de sus equipos y componentes.
     </p>
     <p>
-
       Se destaca la pertenencia a la <strong>Comisión Sectorial de Electrónica, Informática y Telecomunicaciones de ENAC (Entidad Nacional de Acreditación).</strong>
     </p>
-    `,
+  `,
   textoIntroduccion:`
     <p>
       Los satélites comerciales y científicos están equipados con una mayor potencia de radiofrecuencia (RF) a bordo para responder a la creciente demanda de volúmenes de datos, lo que requiere transmisiones más frecuentes y a mayores velocidades. Sin embargo, esto aumenta la probabilidad de rupturas de voltaje RF e interferencias no deseadas, lo que reduce e incluso pone en peligro el rendimiento de la carga útil. Por lo tanto, una alta densidad de potencia en los componentes RF requiere un diseño, análisis y pruebas en tierra cuidadosos.
@@ -126,11 +130,18 @@ const traduccionEs = {
   textoCamaras:`
     Las cámaras de vacío y de PIM (Passive Intermodulation) son esenciales para ensayos avanzados de radiofrecuencia en entornos controlados. Estas instalaciones permiten evaluar fenómenos críticos como el efecto multipactor, la generación de corona, el manejo de potencia y la intermodulación pasiva, que pueden comprometer el rendimiento de sistemas espaciales y de telecomunicaciones. Al simular condiciones extremas de vacío y alta potencia, se garantiza la fiabilidad de componentes RF en satélites, radares y estaciones base. Estas pruebas son clave para validar diseños, prevenir fallos y cumplir con exigentes normativas aeroespaciales y de comunicaciones, asegurando la integridad electromagnética en aplicaciones de alta exigencia.
   `,
+  textoNuestrasCamarasVacio:`
+    Disponemos de un total de tres cámaras de vacío térmico, cada una con diferentes dimensiones y rangos de temperatura. Esta variedad nos permite realizar ensayos térmicos en condiciones de vacío adaptadas a distintos tipos de componentes y requisitos específicos.<br>
+    Puedes ver los PDF de las cámaras en nuestra sección <a href="multimedia.html#multimedia">Multimedia</a>.
+   `, 
   textoAreaLimpia:`
     Las salas limpias son entornos controlados fundamentales para la fabricación y ensayo de componentes RF destinados a aplicaciones críticas como PIM, multipactor, corona y power handling. Estas áreas minimizan la presencia de partículas, humedad y contaminantes que podrían alterar los resultados de las pruebas o dañar equipos sensibles. En ellas se ensamblan, manipulan y verifican dispositivos de alta frecuencia bajo estrictas condiciones de limpieza y control ambiental. Su diseño cumple con normativas ISO, garantizando la integridad de los ensayos y la fiabilidad de los productos. Son esenciales en sectores aeroespacial, defensa y telecomunicaciones, donde la precisión y la pureza son imprescindibles.
   `,
   textoNuestrosAmplificadores:`
     Contamos con una amplia gama de amplificadores de radiofrecuencia diseñados para cubrir desde bandas bajas hasta frecuencias milimétricas, con potencias que alcanzan varios kilovatios. Nuestra selección incluye modelos de fabricantes líderes como ENI, LogiMetrics, Amplifier Research, BONN Elektronik, ETM, CPI y TMD, entre otros. Estos equipos ofrecen configuraciones adaptadas a distintas interfaces, rangos de frecuencia y tipos de alimentación, garantizando compatibilidad con los requisitos más exigentes de ensayo.<br>
     Cada amplificador ha sido seleccionado por su rendimiento en entornos de prueba críticos, incluyendo cámaras de vacío térmico, bancos de ensayo multipactor y sistemas de validación de conectores y materiales RF. La tabla siguiente presenta las especificaciones clave de nuestros modelos disponibles, facilitando la elección del equipo más adecuado según la aplicación técnica y el rango de operación requerido.
+  `,
+  textoNuestraSalaLimpia:`
+    Una sala limpia, clase ISO-8, con una superficie de 100 m², dedicada principalmente a la integración y pruebas de componentes de vuelo, con la cámara de vacío térmico Mulcopower instalada en su interior.
   `
-    };
+};

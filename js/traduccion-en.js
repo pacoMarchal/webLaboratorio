@@ -18,6 +18,8 @@ const traduccionEn = {
   h3Quienes: "INTA RF power laboratory",
   h3Introduccion:"Introduction on RF High-Power effects",
   h3NuestrosAmplificadores: "Our Amplifiers",
+  h3NuestraSalaLimpia: "Our clean room",
+  h3NuestrasCamarasVacio: "Our vacuum chambers",
   altaPotencia: "High Power",
   titAltaPotencia: "We work with high power",
   titImagenEnsayos: "Anechoic chamber photo with thermal camera inside",
@@ -37,7 +39,7 @@ const traduccionEn = {
   altImagenEnsayos: "Photo of anechoic chamber with thermal chamber inside",
   altImagenCapacidades: "Clean room photo with vacuum chamber",
   captionTablaAmplificadores: "Table of Amplifiers and Specifications Available in Our Laboratory",
-  captionTablaCamaras: "Our Vacuum Chambers",
+  captionTablaCamaras: "Features table",
   altCarrusel01: "ESA's estrack antenna",
   altCarrusel02: "Galileo probe logo",
   altCarrusel03: "ESA Juice Logo",
@@ -52,6 +54,10 @@ const traduccionEn = {
   multimediaSatelite: "Galileo Mission Satellite",
   multimediaHps: "Link to HPS website to watch the movie on YouTube",
   multimediaPdfPresentacion: "Laboratory presentation PDF",
+  multimediaPdfMulcopower: "Mulcopower vacuum chamber PDF",
+  multimediaPdfTVC1: "TVC1 Cosmos-01 vacuum chamber PDF",
+  multimediaPdfTVC2: "TVC2 Cosmos-02 vacuum chamber PDF",
+  multimediaPdfMontena: "PDF of the Montena anechoic PIM chamber",
   contacto: "Contact",
   contactoResponsable: "Service Manager",
   contactoTelefonos: "Phone Numbers",
@@ -71,21 +77,19 @@ const traduccionEn = {
   footerPolitica: "Privacy Policy",
   textoQuienes:`
     <p itemprop='description'>
-    INTA's RF power testing laboratory has facilities for conducting electronic and RF tests, analyses, and trials aimed at evaluating, qualifying, and certifying equipment, subsystems, and systems for aerospace, military, and civil applications.
+      INTA's RF power testing laboratory has facilities for conducting electronic and RF tests, analyses, and trials aimed at evaluating, qualifying, and certifying equipment, subsystems, and systems for aerospace, military, and civil applications.
     </p>
     <p>
-    In addition, it also provides technical advice to the industry and develops some specifications within the scope of its powers.
+      In addition, it also provides technical advice to the industry and develops some specifications within the scope of its powers.
     </p>
     <p>
-
-    The laboratories where RF power tests are performed have an established quality system that complies with the UNE-EN ISO/IEC 17025 standard for testing laboratories.
+      The laboratories where RF power tests are performed have an established quality system that complies with the UNE-EN ISO/IEC 17025 standard for testing laboratories.
     </p>
     <p>
-    The data obtained through these tests allow industry and various government agencies to obtain qualification and/or certification regarding the operational validity of a complete system or some of its equipment and components.
+      The data obtained through these tests allow industry and various government agencies to obtain qualification and/or certification regarding the operational validity of a complete system or some of its equipment and components.
     </p>
     <p>
-
-    It is noteworthy that the company is a member of the <strong>Electronics, Information Technology, and Telecommunications Sectoral Commission of ENAC (National Accreditation Entity).</strong>
+      It is noteworthy that the company is a member of the <strong>Electronics, Information Technology, and Telecommunications Sectoral Commission of ENAC (National Accreditation Entity).</strong>
     </p>
   `,
   textoIntroduccion:`
@@ -126,11 +130,18 @@ const traduccionEn = {
   textoCamaras:`
     Vacuum and PIM (Passive Intermodulation) chambers are essential for advanced radiofrequency testing in controlled environments. These facilities enable the evaluation of critical phenomena such as multipactor effects, corona discharge, power handling, and passive intermodulation, which can compromise the performance of space and telecommunications systems. By simulating extreme vacuum and high-power conditions, they ensure the reliability of RF components in satellites, radars, and base stations. These tests are key to validating designs, preventing failures, and complying with stringent aerospace and communications standards, ensuring electromagnetic integrity in high-demand applications.
   `,
+  textoNuestrasCamarasVacio:`
+    We have a total of three thermal vacuum chambers, each with different sizes and temperature ranges. This variety allows us to perform thermal testing under vacuum conditions tailored to different types of components and specific requirements.<br>
+    You can view the camera PDFs in our <a href="multimedia.html#multimedia">Multimedia</a> section.
+   `,
   textoAreaLimpia:`
     Clean rooms are controlled environments essential for the manufacturing and testing of RF components intended for critical applications such as PIM, multipactor, corona, and power handling. These areas minimize the presence of particles, moisture, and contaminants that could affect test results or damage sensitive equipment. High-frequency devices are assembled, handled, and verified under strict cleanliness and environmental control conditions. Their design complies with ISO standards, ensuring the integrity of tests and the reliability of products. They are vital in aerospace, defense, and telecommunications sectors, where precision and purity are indispensable.
   `,
   textoNuestrosAmplificadores:`
     We offer a wide range of radiofrequency amplifiers designed to cover everything from low bands to millimeter-wave frequencies, with power levels reaching several kilowatts. Our selection includes models from leading manufacturers such as ENI, LogiMetrics, Amplifier Research, BONN Elektronik, ETM, CPI, and TMD, among others. These units feature configurations tailored to various interfaces, frequency ranges, and power supply types, ensuring compatibility with the most demanding testing requirements.<br>
     Each amplifier has been selected for its performance in critical test environments, including thermal vacuum chambers, multipactor test benches, and RF connector and material validation systems. The table below presents the key specifications of our available models, making it easier to choose the most suitable equipment based on the technical application and required operating range.
+  `,
+  textoNuestraSalaLimpia:`
+    A Clean Room, class ISO-8, surface 100 m2, mostly dedicated to flight components integration and tests, with the Mulcopower thermal vacuum chamber placed inside.
   `
 };
