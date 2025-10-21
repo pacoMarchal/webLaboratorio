@@ -2,16 +2,24 @@
   // Establecer offset según el archivo HTML
   function actualizarOffset() {
     const pagina = window.location.pathname.split("/").pop();
+    const seccion = window.location.hash; // Esto captura el fragmento como "#misiones"
 
     if (window.matchMedia("(max-width: 1000px)").matches) {
       switch (pagina) {
         case "index.html":
-          window.miOffset = -100;
+          if (seccion === "#misiones") {
+            window.miOffset = -50; // Offset específico para #misiones en móvil
+          } else {
+              window.miOffset = -100;
+            }
           break;
         case "ensayos.html":
-          window.miOffset = 100;
+          window.miOffset = 35;
           break;
         case "capacidadesTecnicas.html":
+          window.miOffset = -20;
+          break;
+        case "multimedia.html":
           window.miOffset = -10;
           break;
         default:
@@ -20,13 +28,20 @@
     } else {
       switch (pagina) {
         case "index.html":
-          window.miOffset = -100;
+          if (seccion === "#misiones") {
+            window.miOffset = 0; // Offset específico para #misiones en escritorio
+          } else {
+              window.miOffset = -100;
+            }
           break;
         case "ensayos.html":
           window.miOffset = 160;
           break;
         case "capacidadesTecnicas.html":
-          window.miOffset = 50;
+          window.miOffset = -10;
+          break;
+        case "multimedia.html":
+          window.miOffset = -30;
           break;
         default:
           window.miOffset = 0;

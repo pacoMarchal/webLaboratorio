@@ -1,5 +1,6 @@
 section {
-  margin: 3rem 0;
+  /*margin: 3rem 0;*/
+  margin: unset;
 }
 
 h2::after{
@@ -32,7 +33,7 @@ h2::after{
   width: 100%;
   height: 2px;
   background-color: var(--ensayosNumeroLineaColor);
-  z-index: 1;
+  z-index: -10;
 }
 
 /* Número centrado justo encima de la línea */
@@ -46,7 +47,7 @@ h2::after{
   color: var(--ensayosNumeroLineaColor);
   background-color: black;
   padding: 0 1rem;
-  z-index: 2;
+  z-index: 0;
   pointer-events: none;
 }
 
@@ -117,6 +118,28 @@ h2::after{
 
 .imagenes-bloque2.amplificadores img{
   width: 100%;
+}
+
+#listadoEquipo::before{
+  content: unset;
+}
+
+.contenedor-bloques2.listadoEquipo{
+  width: unset;
+}
+
+.texto.listadoEquipo{
+  width: 100%;
+  max-width: unset;
+}
+
+.imagenes-bloque2.listadoEquipo{
+  width: unset;
+}
+
+.imagenes-bloque2.listadoEquipo img{
+  width: 100%;
+  height: fit-content;
 }
 
 .izquierda, .derecha{

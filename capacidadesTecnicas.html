@@ -10,14 +10,6 @@
   <link rel="stylesheet" href="estilos/slideshowControl.css">
   <link rel="stylesheet" href="estilos/estilosCapacidades.css">
   <link rel="stylesheet" href="estilos/responsive.css">
-
-  <style type="text/css">
-    *{
-/*      border: 1px solid red;*/
-}
-
-
-</style>
 </head>
 <body>
   <header class="barra-navegacion">
@@ -159,118 +151,150 @@
                <tr><td>IFI</td><td>0,2</td><td>1</td><td></td><td>400</td><td>CW</td><td>M5404</td></tr>
                <tr><td>LogiMetrics</td><td>1</td><td>2,8</td><td></td><td>200</td><td>CW</td><td>A610LS</td></tr>
              </tbody>
-
            </table>
          </div>
        </section>
 
-       <section class="bloque-capacidades grupo2" id="camaras">
-        <div class="contenedor-bloques">
-          <div class="texto derecha">
-            <h3 data-i18n="menuCamaras">Cámaras</h3>
-            <span data-i18n="textoCamaras"></span>
-          </div>
-          <img src="imagenes/camaras.png" alt="Fotografía de cámara de alto vacío">
+       <section class="bloque-capacidades grupo2" id="listadoEquipo">
+        <div class="contenedor-bloques2 listadoEquipo">
+          <div class="texto izquierda listadoEquipo">
+            <h3>Además disponemos de ...</h3>
+            <span>
+             <ul class="listado">
+              <li>
+                <span class="numeroItem">1</span>
+                Dos sistemas VNA con capacidad de hasta 50 GHz
+              </li>
+              <li>
+                <span class="numeroItem">2</span>
+                Analizadores de espectro de última generación que alcanzan hasta 67 GHz
+              </li>
+              <li>
+                <span class="numeroItem">3</span>
+                Amplificadores de bajo ruido (LNA) duplicados, operativos hasta 60 GHz
+              </li>
+              <li>
+                <span class="numeroItem">4</span>
+                Amplia gama de generadores de RF, con cobertura de hasta 50 GHz
+              </li>
+              <li>
+                <span class="numeroItem">5</span>
+                Más de 40 canales de medición de potencia, cada uno con capacidad de hasta 50 GHz
+              </li>
+            </ul>
+          </span>
         </div>
-        <div class="contenedor-bloques2 dos-filas">
-          <div class="contenedor-fila1">
-            <div class="fila1-hijo1">
-              <div class="contenedor-tabla">
-                <table class="tabla-original">
-                  <caption data-i18n="captionTablaCamaras"></caption>
-                  <thead>
-                    <tr>
-                      <th>Characteristic</th>
-                      <th>MULCOPOWER TVAC</th>
-                      <th>TVC-1</th>
-                      <th>TVC-2</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr><td rowspan="2">Useful Capacity</td><td>Ø 1000mm</td><td>Ø 1300mm</td><td>Ø 800mm</td></tr>
-                    <tr><td>L 500</td><td>L 1500</td><td>L 1000</td></tr>
-                    <tr><td rowspan="2">Temperature Range</td><td>-70°C to</td><td>-150°C to</td><td>-150°C to</td></tr>
-                    <tr><td>+90°C</td><td>+150°C</td><td>+150°C</td></tr>
-                    <tr><td rowspan="2">Vacuum</td><td>Better than</td><td>Better than</td><td>Better than</td></tr>
-                    <tr><td>5x10<sup>-6</sup> mbar</td><td>1x10<sup>-6</sup> mbar</td><td>5x10<sup>-6</sup> mbar</td></tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div class="fila1-hijo2">
-              <div class="texto izquierda">
-                <h3 data-i18n="h3NuestrasCamarasVacio">Nuestras cámaras de vacío</h3>
-                <span data-i18n-html="textoNuestrasCamarasVacio"></span>
-              </div>
-            </div>
-          </div>
-          <div class="contenedor-fila2">
-            <div class="texto derecha">
-              <h3>Cámara PIM anecoica Montena</h3>
-              <span>
-                Disponemos de una cámara térmica PIM especialmente diseñada para ensayos radiados, con atmósfera de nitrógeno puro y un rango de temperatura de hasta 150°C. Su diseño optimiza la estabilidad térmica durante los ensayos, garantizando condiciones controladas para mediciones precisas de intermodulación pasiva (PIM), incluso en entornos exigentes de alta temperatura y atmósfera inerte.
-              </span>
-            </div>
+        <div class="imagenes-bloque2 listadoEquipo">
+          <img src="imagenes/analizadorEspectros.png">
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque-capacidades grupo2" id="camaras">
+      <div class="contenedor-bloques">
+        <div class="texto derecha">
+          <h3 data-i18n="menuCamaras">Cámaras</h3>
+          <span data-i18n="textoCamaras"></span>
+        </div>
+        <img src="imagenes/camaras.png" alt="Fotografía de cámara de alto vacío">
+      </div>
+      <div class="contenedor-bloques2 dos-filas">
+        <div class="contenedor-fila1">
+          <div class="fila1-hijo1">
             <div class="contenedor-tabla">
-              <table class="tabla-original anecoica">
-                <caption>Chamber Specifications</caption>
+              <table class="tabla-original">
+                <caption data-i18n="captionTablaCamaras"></caption>
                 <thead>
                   <tr>
                     <th>Characteristic</th>
-                    <th>Chamber</th>
+                    <th>MULCOPOWER TVAC</th>
+                    <th>TVC-1</th>
+                    <th>TVC-2</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Anechoic PIM chamber measures</td>
-                    <td>5000 x 4200 x 3300 mm</td>
-                  </tr>
-                  <tr>
-                    <td>Thermal PIM chamber measures</td>
-                    <td>1800 x 1800 x 1500 mm</td>
-                  </tr>
-                  <tr>
-                    <td>Temperature Range</td>
-                    <td>-150°C to +150°C</td>
-                  </tr>
-                  <tr>
-                    <td>Humidity</td>
-                    <td>Zero humidity (full nitrogen atmosphere)</td>
-                  </tr>
-                  <tr>
-                    <td>Frecuency</td>
-                    <td>10 KHz to 50 GHz</td>
-                  </tr>
+                  <tr><td rowspan="2">Useful Capacity</td><td>Ø 1000mm</td><td>Ø 1300mm</td><td>Ø 800mm</td></tr>
+                  <tr><td>L 500</td><td>L 1500</td><td>L 1000</td></tr>
+                  <tr><td rowspan="2">Temperature Range</td><td>-70°C to</td><td>-150°C to</td><td>-150°C to</td></tr>
+                  <tr><td>+90°C</td><td>+150°C</td><td>+150°C</td></tr>
+                  <tr><td rowspan="2">Vacuum</td><td>Better than</td><td>Better than</td><td>Better than</td></tr>
+                  <tr><td>5x10<sup>-6</sup> mbar</td><td>1x10<sup>-6</sup> mbar</td><td>5x10<sup>-6</sup> mbar</td></tr>
                 </tbody>
               </table>
             </div>
           </div>
+          <div class="fila1-hijo2">
+            <div class="texto izquierda">
+              <h3 data-i18n="h3NuestrasCamarasVacio">Nuestras cámaras de vacío</h3>
+              <span data-i18n-html="textoNuestrasCamarasVacio"></span>
+            </div>
+          </div>
         </div>
-        <div class="numero">2</div>
-      </section>
+        <div class="contenedor-fila2">
+          <div class="texto derecha">
+            <h3 data-i18n="h3CamaraMontena">Cámara PIM anecoica Montena</h3>
+            <span data-i18n="textoCamaraMontena"></span>
+          </div>
+          <div class="contenedor-tabla">
+            <table class="tabla-original anecoica">
+              <caption>Chamber Specifications</caption>
+              <thead>
+                <tr>
+                  <th>Characteristic</th>
+                  <th>Chamber</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Anechoic PIM chamber measures</td>
+                  <td>5000 x 4200 x 3300 mm</td>
+                </tr>
+                <tr>
+                  <td>Thermal PIM chamber measures</td>
+                  <td>1800 x 1800 x 1500 mm</td>
+                </tr>
+                <tr>
+                  <td>Temperature Range</td>
+                  <td>-150°C to +150°C</td>
+                </tr>
+                <tr>
+                  <td>Humidity</td>
+                  <td>Zero humidity (full nitrogen atmosphere)</td>
+                </tr>
+                <tr>
+                  <td>Frecuency</td>
+                  <td>10 KHz to 50 GHz</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="numero">2</div>
+    </section>
 
-      <section class="bloque-capacidades grupo3" id="areaLimpia">
-        <div class="contenedor-bloques">
-          <img src="imagenes/areaLimpia.jpg" alt="Fotografía de un laboratorio de área limpia">
-          <div class="texto izquierda">
-            <h3 data-i18n="menuAreaLimpia">Área limpia</h3>
-            <span data-i18n="textoAreaLimpia"></span>
-          </div>
+    <section class="bloque-capacidades grupo3" id="areaLimpia">
+      <div class="contenedor-bloques">
+        <img src="imagenes/areaLimpia.jpg" alt="Fotografía de un laboratorio de área limpia">
+        <div class="texto izquierda">
+          <h3 data-i18n="menuAreaLimpia">Área limpia</h3>
+          <span data-i18n="textoAreaLimpia"></span>
         </div>
-        <div class="contenedor-bloques2">
-          <div class="texto izquierda">
-            <h3 data-i18n="h3NuestraSalaLimpia">Nuestra sala limpia</h3>
-            <span data-i18n="textoNuestraSalaLimpia"></span>
-          </div>
-          <div class="imagenes-bloque2">
-            <img src="imagenes/lab.jpg">
-            <img src="imagenes/lab3.png">
-          </div>
+      </div>
+      <div class="contenedor-bloques2">
+        <div class="texto izquierda">
+          <h3 data-i18n="h3NuestraSalaLimpia">Nuestra sala limpia</h3>
+          <span data-i18n="textoNuestraSalaLimpia"></span>
         </div>
-        <div class="numero">3</div>
-      </section>
-    </div>
-  </section>
+        <div class="imagenes-bloque2">
+          <img src="imagenes/lab.jpg">
+          <img src="imagenes/lab3.png">
+        </div>
+      </div>
+      <div class="numero">3</div>
+    </section>
+  </div>
+</section>
 </main>
 
 <footer class="pie">

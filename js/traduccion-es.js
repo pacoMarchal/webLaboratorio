@@ -20,6 +20,7 @@ const traduccionEs = {
   h3NuestrosAmplificadores: "Nuestros Amplificadores",
   h3NuestraSalaLimpia: "Nuestra sala limpia",
   h3NuestrasCamarasVacio: "Nuestras cámaras de vacío",
+  h3CamaraMontena: "Cámara PIM anecoica Montena",
   altaPotencia: "Alta Potencia",
   titAltaPotencia: "Trabajamos con alta potencia",
   titImagenEnsayos: "Foto de cámara anecoica con cámara térmica dentro",
@@ -143,5 +144,8 @@ const traduccionEs = {
   `,
   textoNuestraSalaLimpia:`
     Una sala limpia, clase ISO-8, con una superficie de 100 m², dedicada principalmente a la integración y pruebas de componentes de vuelo, con la cámara de vacío térmico Mulcopower instalada en su interior.
+  `,
+  textoCamaraMontena:`
+    Disponemos de una cámara térmica PIM especialmente diseñada para ensayos radiados, con atmósfera de nitrógeno puro y un rango de temperatura de hasta 150°C. Su diseño optimiza la estabilidad térmica durante los ensayos, garantizando condiciones controladas para mediciones precisas de intermodulación pasiva (PIM), incluso en entornos exigentes de alta temperatura y atmósfera inerte.
   `
 };

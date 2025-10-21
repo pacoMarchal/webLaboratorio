@@ -100,7 +100,8 @@
 @media (max-width: 680px) {
   .contenedor-fila1,
   .contenedor-fila2,
-  .amplificadores{
+  .amplificadores
+  .listadoEquipo{
     flex-direction: column;
   }
 

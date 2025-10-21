@@ -20,6 +20,7 @@ const traduccionEn = {
   h3NuestrosAmplificadores: "Our Amplifiers",
   h3NuestraSalaLimpia: "Our clean room",
   h3NuestrasCamarasVacio: "Our vacuum chambers",
+  h3CamaraMontena: "Montena Anechoic PIM Chamber",
   altaPotencia: "High Power",
   titAltaPotencia: "We work with high power",
   titImagenEnsayos: "Anechoic chamber photo with thermal camera inside",
@@ -143,5 +144,8 @@ const traduccionEn = {
   `,
   textoNuestraSalaLimpia:`
     A Clean Room, class ISO-8, surface 100 m2, mostly dedicated to flight components integration and tests, with the Mulcopower thermal vacuum chamber placed inside.
+  `,
+  textoCamaraMontena:`
+    We have a PIM thermal chamber specially designed for radiated tests, featuring a pure nitrogen atmosphere and a temperature range of up to 150°C. Its design optimizes thermal stability during testing, ensuring controlled conditions for precise passive intermodulation (PIM) measurements, even in demanding environments with high temperatures and inert atmospheres.
   `
 };
