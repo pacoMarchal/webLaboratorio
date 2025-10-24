@@ -74,10 +74,10 @@
             <img src="imagenes/amplificadores2.jpg" alt="Fotografía de Amplificadores de radiofrecuancia">
             <div class="texto izquierda">
               <h3 data-i18n="menuAmplificadores">Amplificadores</h3>
-              <span data-i18n="textoAmplificadores"></span>
+              <span data-i18n-html="textoAmplificadores"></span>
             </div>
           </div>
-          <div class="contenedor-bloques2 amplificadores">
+          <div class="contenedor-bloques2 amplificadores efecto-aparecer">
             <div class="texto izquierda">
               <h3 data-i18n="h3NuestrosAmplificadores">Nuestros Amplificadores</h3>
               <span data-i18n-html="textoNuestrosAmplificadores"></span>
@@ -156,30 +156,30 @@
        </section>
 
        <section class="bloque-capacidades grupo2" id="listadoEquipo">
-        <div class="contenedor-bloques2 listadoEquipo">
+        <div class="contenedor-bloques2 listadoEquipo efecto-aparecer">
           <div class="texto izquierda listadoEquipo">
-            <h3>Además disponemos de ...</h3>
+            <h3 data-i18n="h3ListadoEquipo">Además disponemos de ...</h3>
             <span>
              <ul class="listado">
               <li>
                 <span class="numeroItem">1</span>
-                Dos sistemas VNA con capacidad de hasta 50 GHz
+                <span data-i18n-html="textoListadoEquipo1">Dos sistemas VNA con capacidad de hasta 50 GHz</span>
               </li>
               <li>
                 <span class="numeroItem">2</span>
-                Analizadores de espectro de última generación que alcanzan hasta 67 GHz
+                <span data-i18n-html="textoListadoEquipo2">Analizadores de espectro de última generación que alcanzan hasta 67 GHz</span>
               </li>
               <li>
                 <span class="numeroItem">3</span>
-                Amplificadores de bajo ruido (LNA) duplicados, operativos hasta 60 GHz
+                <span data-i18n-html="textoListadoEquipo3">Amplificadores de bajo ruido (LNA) duplicados, operativos hasta 60 GHz</span>
               </li>
               <li>
                 <span class="numeroItem">4</span>
-                Amplia gama de generadores de RF, con cobertura de hasta 50 GHz
+                <span data-i18n-html="textoListadoEquipo4">Amplia gama de generadores de RF, con cobertura de hasta 50 GHz</span>
               </li>
               <li>
                 <span class="numeroItem">5</span>
-                Más de 40 canales de medición de potencia, cada uno con capacidad de hasta 50 GHz
+                <span data-i18n-html="textoListadoEquipo5">Más de 40 canales de medición de potencia, cada uno con capacidad de hasta 50 GHz</span>
               </li>
             </ul>
           </span>
@@ -194,11 +194,11 @@
       <div class="contenedor-bloques">
         <div class="texto derecha">
           <h3 data-i18n="menuCamaras">Cámaras</h3>
-          <span data-i18n="textoCamaras"></span>
+          <span data-i18n-html="textoCamaras"></span>
         </div>
         <img src="imagenes/camaras.png" alt="Fotografía de cámara de alto vacío">
       </div>
-      <div class="contenedor-bloques2 dos-filas">
+      <div class="contenedor-bloques2 dos-filas efecto-aparecer">
         <div class="contenedor-fila1">
           <div class="fila1-hijo1">
             <div class="contenedor-tabla">
@@ -232,8 +232,8 @@
         </div>
         <div class="contenedor-fila2">
           <div class="texto derecha">
-            <h3 data-i18n="h3CamaraMontena">Cámara PIM anecoica Montena</h3>
-            <span data-i18n="textoCamaraMontena"></span>
+            <h3 data-i18n-html="h3CamaraMontena">Cámara PIM anecoica Montena</h3>
+            <span data-i18n-html="textoCamaraMontena"></span>
           </div>
           <div class="contenedor-tabla">
             <table class="tabla-original anecoica">
@@ -246,11 +246,11 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Anechoic PIM chamber measures</td>
+                  <td>Anechoic <abbr title="Passive Intermodulation">PIM</abbr> chamber measures</td>
                   <td>5000 x 4200 x 3300 mm</td>
                 </tr>
                 <tr>
-                  <td>Thermal PIM chamber measures</td>
+                  <td>Thermal <abbr title="Passive Intermodulation">PIM</abbr> chamber measures</td>
                   <td>1800 x 1800 x 1500 mm</td>
                 </tr>
                 <tr>
@@ -278,13 +278,13 @@
         <img src="imagenes/areaLimpia.jpg" alt="Fotografía de un laboratorio de área limpia">
         <div class="texto izquierda">
           <h3 data-i18n="menuAreaLimpia">Área limpia</h3>
-          <span data-i18n="textoAreaLimpia"></span>
+          <span data-i18n-html="textoAreaLimpia"></span>
         </div>
       </div>
-      <div class="contenedor-bloques2">
+      <div class="contenedor-bloques2 efecto-aparecer">
         <div class="texto izquierda">
           <h3 data-i18n="h3NuestraSalaLimpia">Nuestra sala limpia</h3>
-          <span data-i18n="textoNuestraSalaLimpia"></span>
+          <span data-i18n-html="textoNuestraSalaLimpia"></span>
         </div>
         <div class="imagenes-bloque2">
           <img src="imagenes/lab.jpg">
@@ -301,12 +301,12 @@
   <div class="contenedor-footer">
     <img src="imagenes/logoInta2.png" alt="Logo INTA" class="logo-footer">
     <address class="info-footer">
-      <p><small data-i18n="direccionEmpresa">© 2025 INTA - Laboratorio de Ensayos de Radiofrecuencia</small></p>
+      <p><small data-i18n-html="direccionEmpresa">© 2025 INTA - Laboratorio de Ensayos de Radiofrecuencia</small></p>
       <p data-i18n="direccionDireccion">Ctra. Ajalvir, km 4, 28850 Torrejón de Ardoz, Madrid</p>
     </address>
     <nav class="enlaces-footer" aria-label="Enlaces legales y de contacto">
-      <a href="javascript:void(0)" data-i18n="footerAviso">Aviso Legal</a>
-      <a href="javascript:void(0)" data-i18n="footerPolitica">Política de Privacidad</a>
+      <a href="avisoLegal.html#avisoLegal" data-i18n="footerAviso">Aviso Legal</a>
+      <a href="politicaPrivacidad.html#politicaPrivacidad" data-i18n="footerPolitica">Política de Privacidad</a>
       <a href="contacto.html#contacto" data-i18n="contacto">Contacto</a>
     </nav>
   </div>

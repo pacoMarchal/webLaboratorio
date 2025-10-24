@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="tituloPagina">Laboratorio de ensayos de radiofrecuencia INTA</title>
+  <link rel="stylesheet" href="estilos/variables.css">
+  <link rel="stylesheet" href="estilos/estilos.css">
+  <link rel="stylesheet" href="estilos/menuSuperior.css">
+  <link rel="stylesheet" href="estilos/slideshowControl.css">
+  <link rel="stylesheet" href="estilos/responsive.css">
+  <style>
+
+    #politicaPrivacidad {
+      /*border: 1px solid red;*/
+      display: inline-block;
+      width: 90%;
+      color: var(--mainGridColorFondo);
+    }
+
+    #politicaPrivacidad h3 {
+      padding: 1rem 0;
+      font-size: 2rem;
+      color: var(--subMenuFondo);
+    }
+
+    p {
+        margin: revert;
+    }
+
+  </style>
+</head>
+<body>
+  <header class="barra-navegacion">
+    <img src="imagenes/logoInta2.png" alt="Logo INTA" class="logo">
+    <nav class="menu" aria-label="Menú principal de navegación">
+      <button class="boton-menu" aria-label="Abrir menú de navegación" onclick="alternarMenu()">☰</button>
+      <ul id="elementos-menu">
+        <li><a href="index.html" data-i18n="menuInicio">Inicio</a></li>
+        <li class="tiene-submenu">
+          <a href="index.html#ensayos"><span data-i18n="menuEnsayos">Ensayos</span><span> ▾</span></a>
+          <ul class="submenu">
+            <li><a href="ensayos.html#multipactor" data-i18n="menuMultipactor">Multipactor</a></li>
+            <li><a href="ensayos.html#corona" data-i18n="menuCorona">Corona</a></li>
+            <li><a href="ensayos.html#pim" data-i18n="menuPim">PIM</a></li>
+            <li><a href="ensayos.html#powerHandling" data-i18n="menuPowerHandling">Power Handling</a></li>
+          </ul>
+        </li>
+        <li class="tiene-submenu">
+          <a href="index.html#capacidades-tecnicas"><span data-i18n="menuCapacidadesTecnicas">Capacidades Técnicas</span><span> ▾</span></a>
+          <ul class="submenu">
+            <li><a href="capacidadesTecnicas.html#amplificadores" data-i18n="menuAmplificadores">Amplificadores</a></li>
+            <li><a href="capacidadesTecnicas.html#camaras" data-i18n="menuCamaras">Cámaras</a></li>
+            <li><a href="capacidadesTecnicas.html#areaLimpia" data-i18n="menuAreaLimpia">Área limpia</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#misiones" data-i18n="menuMisionesParticipadas">Misiones Participadas</a></li>
+        <li><a href="multimedia.html#multimedia" data-i18n="menuMultimedia">Multimedia</a></li>
+        <li>
+          <label class="switch">
+            <input type="checkbox" id="languageToggle" aria-label="Cambiar idioma">
+            <span class="slider"></span>
+          </label>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <header id="encabezado">
+    <button class="flecha izquierda" aria-label="Mostrar imagen previa">&#10094;</button>
+    <button class="flecha derecha" aria-label="Mostrar imagen posterior">&#10095;</button>
+    <button id="boton-pausa" class="boton-slideshow" aria-label="Pausar presentación imágenes">❚❚</button>
+
+    <h1 class="texto-actividad">
+      INTA RF Power Laboratory
+    </h1>
+  </header>
+
+  <main>
+
+    <section id="alta-potencia">
+      <h2 class="visualmente-oculto">Alta potencia</h2>
+      <div title="Trabajamos con alta potencia" data-i18n-title="titAltaPotencia"><span data-i18n="altaPotencia">ALTA POTENCIA</span></div>
+    </section>
+
+    <section>
+      <header>
+        <h2 data-i18n="footerPolitica"></h2>
+      </header>
+
+      <div id="politicaPrivacidad">
+        A continuación le informamos sobre la política de protección de datos del Instituto Nacional de Técnica Aeroespacial.
+
+        <h3>Responsable del tratamiento</h3>
+
+        <p>El responsable del tratamiento de los datos recabados es el Organismo Autónomo Instituto Nacional de Técnica Aeroespacial “Esteban Terradas” (en adelante, INTA), con NIF INTA Q2822003F y ubicado en Carretera Torrejón a Ajalvir Km. 4,5, 28850 Torrejón de Ardoz (Madrid).</p>
+
+        <p>El desglose de todos los tratamientos de datos realizados o llevados a cabo por el INTA están reflejados en el <a href="https://www.inta.es/export/sites/default/.galleries/Galeria-pdfs-de-paginas/RAT-TRATAMIENTOS-INTA.pdf" title="Descargar Registro de Actividades INTA (PDF)" target="_blank" rel="noopener">Registro de Actividades de Tratamiento</a> publicado en la página web del INTA.</p>
+
+        <p>En este Registro de Actividades puede encontrar información detallada sobre el responsable del tratamiento, la finalidad, legitimación, conservación de los datos personales y sobre las posibles cesiones o transferencias internacionales de datos.</p>
+
+        <h3>Finalidad</h3>
+
+        <p>La finalidad del tratamiento de los datos correspondiente a cada una de las actividades de tratamiento que realiza el INTA puede consultarse en el <a href="https://www.inta.es/export/sites/default/.galleries/Galeria-pdfs-de-paginas/RAT-TRATAMIENTOS-INTA.pdf" title="Descargar Registro de Actividades INTA (PDF)" target="_blank" rel="noopener">Registro de Actividades de Tratamiento</a>.</p>
+
+        <h3>Legitimación</h3>
+
+        <p>La legitimación del tratamiento de los datos realizado por el INTA puede estar basada en el cumplimiento de una misión realizada en interés público o en el ejercicio de poderes públicos conferidos al responsable del tratamiento; en el cumplimiento de una obligación legal; en el consentimiento de las personas interesadas, o en cualquiera de las otras causas tasadas en el artículo 6 del Reglamento General 2016/679 de Protección de Datos (en adelante, RGPD).</p>
+
+        <p>En el caso de actividades de tratamiento que traten datos de categorías especiales, la habilitación puede estar basada en cualquiera de las causas tasadas en el artículo 9 del RGPD o de la Ley Orgánica 3/2018 de Protección de Datos y Garantía de los Derechos Digitales (en adelante, LOPDGDD).</p>
+
+        <p>El INTA se compromete a guardar la máxima reserva y confidencialidad sobre la información que le sea facilitada y a utilizarla únicamente para los fines establecidos para cada tratamiento.</p>
+
+        <p>Puede consultarse la base legal para cada una de las actividades de tratamiento que lleva a cabo el INTA en el <a href="https://www.inta.es/export/sites/default/.galleries/Galeria-pdfs-de-paginas/RAT-TRATAMIENTOS-INTA.pdf" title="Descargar Registro de Actividades INTA (PDF)" target="_blank" rel="noopener">Registro de Actividades de Tratamiento</a>.</p>
+
+        <h3>Plazo de conservación de los datos</h3>
+
+        Se conservarán durante el tiempo necesario para cumplir con la finalidad para la que fueron recabados, así como durante el tiempo que resulte necesario para determinar las posibles responsabilidades que se pudieran derivar de dicha finalidad y del tratamiento de los datos, además de los períodos establecidos en la normativa específica que le sea de aplicación y en la normativa sobre archivos y documentación.
+
+        Los plazos de conservación para cada una de las actividades tratamiento que realiza el INTA pueden consultarse en el <a href="https://www.inta.es/export/sites/default/.galleries/Galeria-pdfs-de-paginas/RAT-TRATAMIENTOS-INTA.pdf" title="Descargar Registro de Actividades INTA (PDF)" target="_blank" rel="noopener">Registro de Actividades de Tratamiento</a>.
+
+        <h3>Comunicación de datos</h3>
+
+        <p>Se podrán consultar los destinatarios para cada una de las actividades de tratamiento de datos personales realizados por el INTA en el <a href="https://www.inta.es/export/sites/default/.galleries/Galeria-pdfs-de-paginas/RAT-TRATAMIENTOS-INTA.pdf" title="Descargar Registro de Actividades INTA (PDF)" target="_blank" rel="noopener">Registro de Actividades de Tratamiento</a>.</p>
+
+        <h3>Derechos de los interesados</h3>
+
+        <p>Los interesados pueden ejercitar ante el responsable del tratamiento los derechos recogidos en el RGPD y en la LOPDGDD:</p>
+
+        <ul>
+          <li>acceso a sus datos personales,</li>
+          <li>rectificación de los mismos,</li>
+          <li>supresión, oposición, limitación del tratamiento y portabilidad en aquellos casos que se sea posible de acuerdo con la normativa vigente.</li>
+        </ul>
+
+        <p>Las solicitudes de derechos podrán ejercerse a través de los siguientes canales, todos ellos gratuitos:</p>
+
+        <ol>
+          <li>
+            <strong>Sede electrónica del Ministerio de Defensa</strong> a través del enlace <a title="Ir al procedimiento de la Sede electrónica del Ministerio de Defensa (en nueva ventana)." href="https://sede.defensa.gob.es/acceda/index" target="_blank" rel="noopener noreferrer">https://sede.defensa.gob.es/acceda/index</a>.
+            
+            En el apartado "<em>Trámites</em>" -> "<em>Generales</em>" encontrará una sección dedicada al <em>"Ejercicio de Derechos de Protección de Datos"</em>, dentro del cual está disponible un procedimiento específico en el enlace <em>"Ejercicio de derechos de protección de datos ante la <strong>Secretaría de Estado de Defensa</strong> (Código SIA: 1161094)"</em>, donde puede acceder a los diferentes formularios en función del derecho que desee ejercitar ante el INTA.
+          </li>
+          
+          <li>En los <strong>Registros de la Administración Pública</strong>, dirigiendo la solicitud al INTA: Carretera Torrejón a Ajalvir Km. 4,5, 28850 Torrejón de Ardoz (Madrid).</li>
+          
+          <li><strong>Delegado de Protección de Datos del Ministerio de Defensa (DPD)</strong>: enviando un <strong>correo electrónico</strong> a <a title="Correo a &quot;dpd@mde.es&quot;" href="mailto:dpd@mde.es" target="_blank" rel="noopener">dpd@mde.es</a> firmado con una firma reconocida como válida por la plataforma <a title="Abrir Plataforma &quot;VALIDE&quot; en nueva ventana" href="https://valide.redsara.es/valide/" target="_blank" rel="noopener"><strong>VALIDE</strong></a> o por <strong>correo postal</strong> dirigido al Delegado de Protección de Datos, Paseo de la Castellana 109 (Ministerio de Defensa), 28071 Madrid.</li>
+        </ol>
+
+        <h3>Reclamaciones ante las autoridades de protección de datos</h3>
+
+        <p>Podrá ejercer su derecho a reclamar ante la Agencia Española de Protección de Datos, como autoridad de control, ubicada en la Calle Jorge Juan 6, 28001 Madrid.</p>
+
+        <p>Con carácter previo a la presentación de una reclamación ante la Agencia Española de Protección de Datos o, en su caso, ante las autoridades autonómicas de protección de datos, podrá dirigirse al delegado de protección de datos del Ministerio de Defensa a través de la siguiente dirección de correo electrónico: <a title="Correo a &quot;dpd@mde.es&quot;" href="mailto:dpd@mde.es" target="_blank" rel="noopener">dpd@mde.es</a>.</p>
+
+        <h3>Información sobre el Delegado de Protección de Datos</h3>
+
+        <p>El Ministerio de Defensa, en virtud de la obligación atribuida a los organismos públicos por el Reglamento General de Protección de datos, ha designado un Delegado de Protección de Datos (DPD) (Arts. 37 a 39 del <a title="Abrir documento (PDF)" href="https://www.boe.es/doue/2016/119/L00001-00088.pdf" target="_blank" rel="noopener">RGPD</a>), con el cual puede contactar a través de la siguiente dirección de correo electrónico: <a title="Correo a &quot;dpd@mde.es&quot;" href="mailto:dpd@mde.es" target="_blank" rel="noopener">dpd@mde.es</a>.</p>
+
+        <h3>Imágenes y vídeos con datos de carácter personal para páginas web y redes sociales</h3>
+
+        <p>Las imágenes y vídeos publicados en el Portal www.inta.es, así como en los perfiles del Instituto Nacional de Técnica Aeroespacial en redes sociales <a title="Ir a facebook en nueva ventana" href="https://www.facebook.com/INTAESPANA/" target="_blank" rel="noopener noreferrer">Facebook</a>, <a title="Ir a Twitter en nueva ventana" href="https://twitter.com/intaespana" target="_blank" rel="noopener noreferrer">Twitter</a>, <a title="Ir a Instagram en nueva ventana" href="https://www.instagram.com/intaespanaet/" target="_blank" rel="noopener noreferrer">Instagram</a> y <a title="Ir a YouTube" href="https://www.youtube.com/channel/UCwGLSuAERYMR_dKBuWy2fVg" target="_blank" rel="noopener noreferrer">YouTube</a> forman parte del tratamiento de imágenes y vídeos del Instituto con la finalidad de elaborar, dirigir y controlar la política de comunicación e imagen institucional del INTA ante los medios de comunicación social y difundir la cultura científica y tecnológica.</p>
+
+        <p>Las imágenes que conforman este tratamiento se publican con la finalidad de fomentar y promover la cultura científica y tecnológica, propiciar un mayor conocimiento de la actividad científico-tecnológica que se viene desarrollando en esta Institución y demostrar la importancia de la investigación científica y tecnológica en la evolución y resolución de problemas en nuestra sociedad. Además, como centro tecnológico del Ministerio de Defensa, las imágenes se publican para difundir la realización de ensayos para la comprobación y certificación de materiales, componentes, equipos, sistemas y subsistemas y para presentar los servicios y el asesoramiento técnico a entidades y organismos oficiales, así como a empresas industriales o de base tecnológica.</p>
+
+        <p>Si el interesado considera que alguna de las imágenes publicadas, tanto en la web como en las redes sociales referenciadas, pueden lesionar algún derecho de la persona, podrá ejercer sus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad de los datos a través de la sede electrónica del Ministerio de Defensa en el siguiente enlace <a title="Ir al enlace. Abre en nueva ventana." href="http://sede.defensa.gob.es/acceda/contacto" target="_blank" rel="noopener noreferrer">http://sede.defensa.gob.es/acceda/contacto</a>, en cualquier oficina de registro oficial o a través del correo electrónico del DPD: <a title="Enviar correo a &quot;dpd@mde.es&quot;" href="mailto:dpd@mde.es" target="_blank" rel="noopener">dpd@mde.es</a> (ver punto <a title="Ver punto &quot;Derechos de los interesados&quot;" href="#h_8901980053061689932201699">Derechos de los interesados</a>).</p>
+
+        <p>Los usuarios, en ningún caso, podrán hacer uso comercial de las imágenes y vídeos publicados en la página web, revistas o en las redes sociales del Instituto Nacional de Técnica Aeroespacial, ni alterarlos de cualquier manera, reproducirlos más allá de su uso privado, distribuirlos o comunicarlos públicamente.</p>
+
+        <h3>Modelos digitales para ARCO+ en formato PDF</h3>
+
+        <p>Mediante los siguientes documentos podrá ejercitar los diferentes derechos que le asisten de forma presencial o electrónica (telemática) en los registros y organismos habilitados.</p>
+
+        <ol>
+          <li>Modelo solicitud <a title="Se abre en nueva ventana Documento PDF derecho de Acceso." href="https://sede.defensa.gob.es/acceda/pdfs/Modelo_solicitud_derecho_acceso_acc.pdf" target="_blank" rel="noopener noreferrer">derecho ACCESO</a></li>
+          <li>Modelo solicitud <a title="Se abre en nueva ventana Documento PDF derecho de Limitación" href="https://sede.defensa.gob.es/acceda/pdfs/Modelo_solicitud_derecho_limitacion_acc.pdf" target="_blank" rel="noopener noreferrer">derecho LIMITACIÓN</a></li>
+          <li>Modelo solicitud <a title="Se abre en nueva ventana Documento PDF derecho de Oposición." href="https://sede.defensa.gob.es/acceda/pdfs/Modelo_solicitud_derecho_oposicion_acc.pdf" target="_blank" rel="noopener noreferrer">derecho OPOSICIÓN</a></li>
+          <li>Modelo solicitud <a title="Se abre en nueva ventana Documento PDF derecho de Portabilidad." href="https://sede.defensa.gob.es/acceda/pdfs/Modelo_solicitud_derecho_portabilidad_acc.pdf" target="_blank" rel="noopener noreferrer">derecho PORTABILIDAD</a></li>
+          <li>Modelo solicitud <a title="Se abre en nueva ventana Documento PDF derecho de Rectificación." href="https://sede.defensa.gob.es/acceda/pdfs/Modelo_solicitud_derecho_rectificacion_acc.pdf" target="_blank" rel="noopener noreferrer">derecho RECTIFICACIÓN</a></li>
+          <li>Modelo solicitud <a title="Se abre en nueva ventana Documento PDF derecho de Supresión." href="https://sede.defensa.gob.es/acceda/pdfs/Modelo_solicitud_derecho_supresion_acc.pdf" target="_blank" rel="noopener noreferrer">derecho SUPRESIÓN</a></li>
+        </ol>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor-footer">
+      <img src="imagenes/logoInta2.png" alt="Logo INTA" class="logo-footer">
+      <address class="info-footer">
+        <p><small data-i18n-html="direccionEmpresa">© 2025 INTA - Laboratorio de Ensayos de Radiofrecuencia</small></p>
+        <p data-i18n="direccionDireccion">Ctra. Ajalvir, km 4, 28850 Torrejón de Ardoz, Madrid</p>
+      </address>
+      <nav class="enlaces-footer" aria-label="Enlaces legales y de contacto">
+        <a href="avisoLegal.html#avisoLegal" data-i18n="footerAviso">Aviso Legal</a>
+        <a href="javascript:void(0)" data-i18n="footerPolitica">Política de Privacidad</a>
+        <a href="contacto.html#contacto" data-i18n="contacto">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/menuSuperior.js"></script>
+  <script src="js/slideshowCabecera.js"></script>
+  <script src="js/efectoScrollMain.js"></script>
+  <script src="js/scrollUniversal.js"></script>
+  <script src="js/traduccion-es.js"></script>
+  <script src="js/traduccion-en.js"></script>
+  <script src="js/switchIdioma.js"></script>
+
+</body>
+</html>

@@ -16,6 +16,9 @@ body {
   font-family: Arial, sans-serif;
   background-color: black;
 }
+abbr {
+  text-decoration: none;
+}
 
 /*===========================
 =       ENCABEZADO          =
@@ -217,7 +220,9 @@ section.visible {
   border-radius: 10px;
 }
 
-.texto-lateral {
+.texto-lateral,
+#politicaPrivacidad,
+#avisoLegal {
   color: white;
   text-align: left;
   background: var(--mainQuienesFondoTexto);
@@ -270,7 +275,9 @@ section#introduccion {
 }
 
 .quienesSomos h3,
-.introduccion h3 {
+.introduccion h3,
+#politicaPrivacidad h3,
+#avisoLegal h3 {
   font-size: clamp(1rem, 1.1rem + 0.5vw, 1.3rem);
   font-weight: 500;
   color: var(--menuTextoHover);
@@ -320,16 +327,20 @@ section#introduccion {
 /*===========================
 =     ENSAYOS / CAPACIDADES / MISIONES
 ===========================*/
-.contenedor-ensayos,
-.contenedor-capacidades,
-.bloques-contacto {
+
+.efecto-aparecer{
   view-timeline-name: --caja;
   view-timeline-axis: block;
   animation-timeline: --caja;
   animation-name: aparecer;
   animation-range: entry 20% cover 50%;
   animation-fill-mode: both;
+}
 
+.contenedor-ensayos,
+.contenedor-capacidades,
+.bloques-contacto,
+.carrusel-misiones {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -571,17 +582,10 @@ tbody tr:nth-child(odd) td:not([rowspan]) {
 }
 
 .carrusel-misiones {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
   position: relative;
-  view-timeline-name: --caja;
-  view-timeline-axis: block;
-  animation-timeline: --caja;
-  animation-name: aparecer;
-  animation-range: entry 20% cover 50%;
-  animation-fill-mode: both;
+  align-items: center;
+  flex-wrap: initial;
+  gap: 2rem;
 }
 
 .carrusel-ventana {
@@ -673,7 +677,9 @@ address.info-footer {
 
 .enlaces-footer a, 
 .galeria-fotos a,
-.contenedor-bloques2 a {
+.contenedor-bloques2 a,
+#politicaPrivacidad a,
+#avisoLegal a {
   color: var(--menuTextoHover);
   text-decoration: none;
   transition: color 0.3s ease;
@@ -681,7 +687,9 @@ address.info-footer {
 
 .enlaces-footer a:hover, 
 .dato a:hover,
-.contenedor-bloques2 a:hover {
+.contenedor-bloques2 a:hover,
+#politicaPrivacidad a:hover,
+#avisoLegal a:hover {
   color: var(--mainEnsayosLineaSubH2);
 }
 

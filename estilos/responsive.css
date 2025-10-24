@@ -264,4 +264,8 @@
   .contenedor-capacidades {
     padding: 1rem;
   }
+  
+  .listado{
+    width: fit-content;
+  }
 }

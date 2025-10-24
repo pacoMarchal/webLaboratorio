@@ -15,12 +15,13 @@ const traduccionEs = {
   menuMultimedia: "Multimedia",
   tituloQuienes: "Quienes somos",
   tituloIntroduccion:"Alta potencia en radiofrecuencia",
-  h3Quienes: "Laboratorio INTA de radiofrecuencia",
-  h3Introduccion:"Introducción a los efectos de la alta potencia en RF",
+  h3Quienes: "Laboratorio <abbr title='Instituto Nacional de Técnica Aeroespacial'>INTA</abbr> de radiofrecuencia",
+  h3Introduccion:"Introducción a los efectos de la alta potencia en <abbr title='Radiofrecuencia'>RF</abbr>",
   h3NuestrosAmplificadores: "Nuestros Amplificadores",
+  h3ListadoEquipo: "Además disponemos de ...",
   h3NuestraSalaLimpia: "Nuestra sala limpia",
   h3NuestrasCamarasVacio: "Nuestras cámaras de vacío",
-  h3CamaraMontena: "Cámara PIM anecoica Montena",
+  h3CamaraMontena: "Cámara <abbr title='Intermodulación Pasiva'>PIM</abbr> anecoica Montena",
   altaPotencia: "Alta Potencia",
   titAltaPotencia: "Trabajamos con alta potencia",
   titImagenEnsayos: "Foto de cámara anecoica con cámara térmica dentro",
@@ -58,12 +59,12 @@ const traduccionEs = {
   multimediaPdfMulcopower: "PDF de la cámara de vacío Mulcopower",
   multimediaPdfTVC1: "PDF de la cámara de vacío TVC1 Cosmos-01",
   multimediaPdfTVC2: "PDF de la cámara de vacío TVC2 Cosmos-02",
-  multimediaPdfMontena: "PDF de la cámara de PIM anecoica Montena",
+  multimediaPdfMontena: "PDF de la cámara de <abbr title='Intermodulación Pasiva'>PIM</abbr> anecoica Montena",
   contacto: "Contacto",
   contactoResponsable: "Responsable del servicio",
   contactoTelefonos: "Teléfonos",
   contactoLaboratorio: "Laboratorio",
-  contactoLaboratorioSpan: "Laboratorio de potencia de RF",
+  contactoLaboratorioSpan: "Laboratorio de potencia de <abbr title='Radiofrecuencia'>RF</abbr>",
   contactoArea: "Área",
   contactoAreaSpan: "Área de Ensayos Eléctricos (4930)",
   contactoDepartamento: "Departamento",
@@ -71,20 +72,20 @@ const traduccionEs = {
   contactoSubdireccion: "Subdirección",
   contactoSubdireccionSpan: "Subdirección General de Sistemas Espaciales (4000)",
   contactoLocalizacion: "Localizacion",
-  contactoLocalizacionSpan: "Sede Central INTA Torrejón de Ardoz",
-  direccionEmpresa: "© 2025 INTA - Laboratorio de Ensayos de Radiofrecuencia",
+  contactoLocalizacionSpan: "Sede Central <abbr title='Instituto Nacional de Técnica Aeroespacial'>INTA</abbr> Torrejón de Ardoz",
+  direccionEmpresa: "© 2025 <abbr title='Instituto Nacional de Técnica Aeroespacial'>INTA</abbr> - Laboratorio de Ensayos de Radiofrecuencia",
   direccionDireccion: "Ctra. Ajalvir, km 4, 28850 Torrejón de Ardoz, Madrid",
   footerAviso: "Aviso Legal",
   footerPolitica: "Política de Privacidad",
   textoQuienes: `
     <p itemprop='description'>
-       El INTA dispone en su laboratorio de ensayos de potencia de RF de instalaciones para llevar a cabo ensayos, análisis y pruebas de tipo electrónico y de RF destinados a evaluar, calificar y certificar equipos, subsistemas y sistemas de aplicación aeroespacial, militar y civil.
+       El <abbr title='Instituto Nacional de Técnica Aeroespacial'>INTA</abbr> dispone en su laboratorio de ensayos de potencia de <abbr title='Radiofrecuencia'>RF</abbr> de instalaciones para llevar a cabo ensayos, análisis y pruebas de tipo electrónico y de <abbr title='Radiofrecuencia'>RF</abbr> destinados a evaluar, calificar y certificar equipos, subsistemas y sistemas de aplicación aeroespacial, militar y civil.
     </p>
     <p>
       Así mismo, también se presta asesoramiento técnico a la industria y se desarrollan algunas especificaciones en el marco de sus competencias.
     </p>
     <p>
-      Los Laboratorios en los que se realizan los ensayos de Potencia de RF disponen de un sistema de calidad establecido que cumple con la norma UNE-EN ISO/IEC 17025 para laboratorios de ensayo.
+      Los Laboratorios en los que se realizan los ensayos de Potencia de <abbr title='Radiofrecuencia'>RF</abbr> disponen de un sistema de calidad establecido que cumple con la norma UNE-EN ISO/IEC 17025 para laboratorios de ensayo.
     </p>
     <p>
       Los datos obtenidos a través de estos ensayos permiten a la industria y a distintos organismos de la administración obtener la calificación y/o certificación sobre la validez del funcionamiento de un sistema completo o alguno de sus equipos y componentes.
@@ -95,29 +96,29 @@ const traduccionEs = {
   `,
   textoIntroduccion:`
     <p>
-      Los satélites comerciales y científicos están equipados con una mayor potencia de radiofrecuencia (RF) a bordo para responder a la creciente demanda de volúmenes de datos, lo que requiere transmisiones más frecuentes y a mayores velocidades. Sin embargo, esto aumenta la probabilidad de rupturas de voltaje RF e interferencias no deseadas, lo que reduce e incluso pone en peligro el rendimiento de la carga útil. Por lo tanto, una alta densidad de potencia en los componentes RF requiere un diseño, análisis y pruebas en tierra cuidadosos.
+      Los satélites comerciales y científicos están equipados con una mayor potencia de radiofrecuencia (<abbr title='Radiofrecuencia'>RF</abbr>) a bordo para responder a la creciente demanda de volúmenes de datos, lo que requiere transmisiones más frecuentes y a mayores velocidades. Sin embargo, esto aumenta la probabilidad de rupturas de voltaje <abbr title='Radiofrecuencia'>RF</abbr> e interferencias no deseadas, lo que reduce e incluso pone en peligro el rendimiento de la carga útil. Por lo tanto, una alta densidad de potencia en los componentes <abbr title='Radiofrecuencia'>RF</abbr> requiere un diseño, análisis y pruebas en tierra cuidadosos.
     </p>
     <p>
-      La potencia RF a bordo de las naves espaciales ha aumentado significativamente en los últimos años y se espera que esta tendencia continúe en la próxima generación de satélites. Algunos satélites de telecomunicaciones están equipados con un gran número de canales, combinados en una sola alimentación de antena (operación multicanal). Las cargas útiles de RF para teledetección requieren una transmisión de alta potencia en una sola matriz de antena (operación monocanal). Además, las flotas de satélites de navegación también han experimentado un aumento progresivo de potencia.
+      La potencia <abbr title='Radiofrecuencia'>RF</abbr> a bordo de las naves espaciales ha aumentado significativamente en los últimos años y se espera que esta tendencia continúe en la próxima generación de satélites. Algunos satélites de telecomunicaciones están equipados con un gran número de canales, combinados en una sola alimentación de antena (operación multicanal). Las cargas útiles de <abbr title='Radiofrecuencia'>RF</abbr> para teledetección requieren una transmisión de alta potencia en una sola matriz de antena (operación monocanal). Además, las flotas de satélites de navegación también han experimentado un aumento progresivo de potencia.
     </p>
     <p>
-      El efecto Multipactor y el efecto Corona son dos fenómenos de descarga que pueden ocurrir en componentes RF a bordo de naves espaciales. La ruptura de voltaje ocurre cuando la generación de electrones supera la eliminación de electrones desde la superficie del componente o del gas intermedio. En caso de ruptura de voltaje RF, los dos principales mecanismos de generación de electrones son la ionización del gas por colisión de electrones (Corona) y la emisión secundaria de electrones desde las superficies (Multipactor). Este último fenómeno está estrechamente relacionado con las propiedades de rendimiento de emisión secundaria del material (SEY).
+      El efecto Multipactor y el efecto Corona son dos fenómenos de descarga que pueden ocurrir en componentes <abbr title='Radiofrecuencia'>RF</abbr> a bordo de naves espaciales. La ruptura de voltaje ocurre cuando la generación de electrones supera la eliminación de electrones desde la superficie del componente o del gas intermedio. En caso de ruptura de voltaje <abbr title='Radiofrecuencia'>RF</abbr>, los dos principales mecanismos de generación de electrones son la ionización del gas por colisión de electrones (Corona) y la emisión secundaria de electrones desde las superficies (Multipactor). Este último fenómeno está estrechamente relacionado con las propiedades de rendimiento de emisión secundaria del material (SEY).
     </p>
     <p>
-      Dado que la física involucrada en estos dos fenómenos es diferente, se han seguido enfoques separados durante las últimas décadas para eliminar, o al menos reducir, el riesgo de descarga en equipos y componentes RF a bordo. A pesar de los esfuerzos, la amenaza de ruptura de voltaje RF sigue siendo un problema serio en el diseño y fabricación de componentes RF para aplicaciones espaciales.
+      Dado que la física involucrada en estos dos fenómenos es diferente, se han seguido enfoques separados durante las últimas décadas para eliminar, o al menos reducir, el riesgo de descarga en equipos y componentes <abbr title='Radiofrecuencia'>RF</abbr> a bordo. A pesar de los esfuerzos, la amenaza de ruptura de voltaje <abbr title='Radiofrecuencia'>RF</abbr> sigue siendo un problema serio en el diseño y fabricación de componentes <abbr title='Radiofrecuencia'>RF</abbr> para aplicaciones espaciales.
     </p>
     <p>
       La Intermodulación Pasiva (PIM) es un tipo de interferencia generada en componentes pasivos donde dos o más señales viajan hacia la antena transmisora. Esta interferencia no deseada crea productos de intermodulación que pueden caer dentro de la banda de frecuencia de recepción, generando el correspondiente efecto de “bloqueo”.
     </p>
     <p>
-      Las pruebas de manejo de potencia implican someter el dispositivo a un régimen de potencia RF continua máxima (CW) bajo condiciones de vacío y temperaturas extremas, con el fin de verificar la capacidad del dispositivo bajo prueba para manejar las grandes cantidades de calor que produce el efecto Joule en entornos hostiles.
+      Las pruebas de manejo de potencia implican someter el dispositivo a un régimen de potencia <abbr title='Radiofrecuencia'>RF</abbr> continua máxima (CW) bajo condiciones de vacío y temperaturas extremas, con el fin de verificar la capacidad del dispositivo bajo prueba para manejar las grandes cantidades de calor que produce el efecto Joule en entornos hostiles.
     </p>
   `,
   textoMultipactor:`
-    El multipactor es un fenómeno de descarga débil que representa una amenaza para los circuitos de radiofrecuencia a bordo de las naves espaciales. Este fenómeno ocurre en condiciones de alto vacío, cuando el campo y el impacto aceleran electrones libres, capturados por el campo eléctrico de RF asociado, sobre la estructura del circuito con suficiente energía para liberar electrones secundarios. A medida que el campo cambia de polaridad, estos electrones se aceleran, impactan en la superficie opuesta y nuevamente liberan electrones secundarios. Al repetirse este proceso millones de veces por segundo, se genera rápidamente una avalancha de electrones que inicia una descarga por multipactor. La consecuencia inmediata de este proceso es la degradación de la señal de RF; sin embargo, puede provocar erosión superficial y, eventualmente, la ruptura del camino de transmisión.
+    El multipactor es un fenómeno de descarga débil que representa una amenaza para los circuitos de radiofrecuencia a bordo de las naves espaciales. Este fenómeno ocurre en condiciones de alto vacío, cuando el campo y el impacto aceleran electrones libres, capturados por el campo eléctrico de <abbr title='Radiofrecuencia'>RF</abbr> asociado, sobre la estructura del circuito con suficiente energía para liberar electrones secundarios. A medida que el campo cambia de polaridad, estos electrones se aceleran, impactan en la superficie opuesta y nuevamente liberan electrones secundarios. Al repetirse este proceso millones de veces por segundo, se genera rápidamente una avalancha de electrones que inicia una descarga por multipactor. La consecuencia inmediata de este proceso es la degradación de la señal de <abbr title='Radiofrecuencia'>RF</abbr>; sin embargo, puede provocar erosión superficial y, eventualmente, la ruptura del camino de transmisión.
   `,
   textoCorona:`
-    La ruptura por ionización (Corona) ocurre a presiones más altas que las necesarias para el fenómeno de multipactor. Durante una descarga de Corona, los electrones se producen mediante colisiones entre electrones y moléculas de gas. Este tipo de descarga depende no solo de la presión, sino también del tipo de gas. El fenómeno comienza cuando se genera una concentración de electrones libres a través de colisiones resonantes entre electrones y moléculas de gas. Los electrones se acumulan en una nube de carga que se desplaza entre o a lo largo de las superficies conductoras. Con cada paso del campo eléctrico, los electrones interactúan con las moléculas, provocando una acumulación adicional de carga y disipación térmica. Este proceso continuará hasta que la densidad de energía sea suficiente para formar un arco de plasma entre los conductores. Como resultado, el daño causado en la trayectoria de RF es bastante severo.
+    La ruptura por ionización (Corona) ocurre a presiones más altas que las necesarias para el fenómeno de multipactor. Durante una descarga de Corona, los electrones se producen mediante colisiones entre electrones y moléculas de gas. Este tipo de descarga depende no solo de la presión, sino también del tipo de gas. El fenómeno comienza cuando se genera una concentración de electrones libres a través de colisiones resonantes entre electrones y moléculas de gas. Los electrones se acumulan en una nube de carga que se desplaza entre o a lo largo de las superficies conductoras. Con cada paso del campo eléctrico, los electrones interactúan con las moléculas, provocando una acumulación adicional de carga y disipación térmica. Este proceso continuará hasta que la densidad de energía sea suficiente para formar un arco de plasma entre los conductores. Como resultado, el daño causado en la trayectoria de <abbr title='Radiofrecuencia'>RF</abbr> es bastante severo.
   `,
   textoPim:`
     La Intermodulación Pasiva (PIM) es un tipo de interferencia que se genera en componentes pasivos cuando dos o más señales viajan hacia la antena transmisora. Esta interferencia no deseada crea productos de intermodulación que pueden caer dentro de la banda de frecuencia de recepción, provocando un efecto de “bloqueo” o interferencia. Cuando señales de transmisión de alta potencia están en proximidad con señales de recepción de baja potencia, los productos de intermodulación pasiva (PIM) generados por las señales de alta potencia pueden interferir directamente con las señales de baja potencia, causando distorsión del canal, degradación y corrupción de datos. Esta interferencia no deseada se atribuye a uniones metal-metal en secciones de guía de onda, conectores, mantas térmicas, cables de tierra, fijaciones, remaches, etc.
@@ -126,26 +127,31 @@ const traduccionEs = {
     Las pruebas de manejo de potencia (Power Handling) consisten en someter el dispositivo a un régimen de potencia continua máxima de radiofrecuencia (CW) bajo condiciones de vacío y temperaturas extremas. El objetivo es garantizar que el dispositivo sea capaz de funcionar correctamente durante toda su vida útil operativa. Operar a máxima potencia genera una mayor cantidad de calor debido al efecto Joule. El aumento de temperatura provoca cambios en algunas propiedades del medio de transmisión, como la conductividad, la geometría e incluso el estado de la materia. Una prueba de manejo de potencia está estrechamente relacionada con la verificación de la capacidad del dispositivo para transferir calor en un entorno tan complejo como el espacio.
   `,
   textoAmplificadores:`
-    Los amplificadores utilizados en ensayos de radiofrecuencia para PIM, multipactor, corona y power handling deben ofrecer alta potencia, linealidad y estabilidad en condiciones extremas. Estos equipos permiten someter componentes RF a niveles elevados de señal para evaluar su comportamiento ante fenómenos no lineales y descargas eléctricas. En entornos de vacío o cámaras especializadas, los amplificadores garantizan una excitación precisa y continua, esencial para detectar fallos, validar diseños y cumplir con estándares aeroespaciales. Su robustez y capacidad de operar en bandas específicas los convierten en herramientas clave para caracterizar materiales, conectores y sistemas de transmisión en aplicaciones críticas de alta frecuencia.
+    Los amplificadores utilizados en ensayos de radiofrecuencia para <abbr title='Intermodulación Pasiva'>PIM</abbr>, multipactor, corona y power handling deben ofrecer alta potencia, linealidad y estabilidad en condiciones extremas. Estos equipos permiten someter componentes <abbr title='Radiofrecuencia'>RF</abbr> a niveles elevados de señal para evaluar su comportamiento ante fenómenos no lineales y descargas eléctricas. En entornos de vacío o cámaras especializadas, los amplificadores garantizan una excitación precisa y continua, esencial para detectar fallos, validar diseños y cumplir con estándares aeroespaciales. Su robustez y capacidad de operar en bandas específicas los convierten en herramientas clave para caracterizar materiales, conectores y sistemas de transmisión en aplicaciones críticas de alta frecuencia.
   `,
   textoCamaras:`
-    Las cámaras de vacío y de PIM (Passive Intermodulation) son esenciales para ensayos avanzados de radiofrecuencia en entornos controlados. Estas instalaciones permiten evaluar fenómenos críticos como el efecto multipactor, la generación de corona, el manejo de potencia y la intermodulación pasiva, que pueden comprometer el rendimiento de sistemas espaciales y de telecomunicaciones. Al simular condiciones extremas de vacío y alta potencia, se garantiza la fiabilidad de componentes RF en satélites, radares y estaciones base. Estas pruebas son clave para validar diseños, prevenir fallos y cumplir con exigentes normativas aeroespaciales y de comunicaciones, asegurando la integridad electromagnética en aplicaciones de alta exigencia.
+    Las cámaras de vacío y de PIM (Passive Intermodulation) son esenciales para ensayos avanzados de radiofrecuencia en entornos controlados. Estas instalaciones permiten evaluar fenómenos críticos como el efecto multipactor, la generación de corona, el manejo de potencia y la intermodulación pasiva, que pueden comprometer el rendimiento de sistemas espaciales y de telecomunicaciones. Al simular condiciones extremas de vacío y alta potencia, se garantiza la fiabilidad de componentes <abbr title='Radiofrecuencia'>RF</abbr> en satélites, radares y estaciones base. Estas pruebas son clave para validar diseños, prevenir fallos y cumplir con exigentes normativas aeroespaciales y de comunicaciones, asegurando la integridad electromagnética en aplicaciones de alta exigencia.
   `,
   textoNuestrasCamarasVacio:`
     Disponemos de un total de tres cámaras de vacío térmico, cada una con diferentes dimensiones y rangos de temperatura. Esta variedad nos permite realizar ensayos térmicos en condiciones de vacío adaptadas a distintos tipos de componentes y requisitos específicos.<br>
     Puedes ver los PDF de las cámaras en nuestra sección <a href="multimedia.html#multimedia">Multimedia</a>.
    `, 
   textoAreaLimpia:`
-    Las salas limpias son entornos controlados fundamentales para la fabricación y ensayo de componentes RF destinados a aplicaciones críticas como PIM, multipactor, corona y power handling. Estas áreas minimizan la presencia de partículas, humedad y contaminantes que podrían alterar los resultados de las pruebas o dañar equipos sensibles. En ellas se ensamblan, manipulan y verifican dispositivos de alta frecuencia bajo estrictas condiciones de limpieza y control ambiental. Su diseño cumple con normativas ISO, garantizando la integridad de los ensayos y la fiabilidad de los productos. Son esenciales en sectores aeroespacial, defensa y telecomunicaciones, donde la precisión y la pureza son imprescindibles.
+    Las salas limpias son entornos controlados fundamentales para la fabricación y ensayo de componentes <abbr title='Radiofrecuencia'>RF</abbr> destinados a aplicaciones críticas como <abbr title='Intermodulación Pasiva'>PIM</abbr>, multipactor, corona y power handling. Estas áreas minimizan la presencia de partículas, humedad y contaminantes que podrían alterar los resultados de las pruebas o dañar equipos sensibles. En ellas se ensamblan, manipulan y verifican dispositivos de alta frecuencia bajo estrictas condiciones de limpieza y control ambiental. Su diseño cumple con normativas ISO, garantizando la integridad de los ensayos y la fiabilidad de los productos. Son esenciales en sectores aeroespacial, defensa y telecomunicaciones, donde la precisión y la pureza son imprescindibles.
   `,
   textoNuestrosAmplificadores:`
     Contamos con una amplia gama de amplificadores de radiofrecuencia diseñados para cubrir desde bandas bajas hasta frecuencias milimétricas, con potencias que alcanzan varios kilovatios. Nuestra selección incluye modelos de fabricantes líderes como ENI, LogiMetrics, Amplifier Research, BONN Elektronik, ETM, CPI y TMD, entre otros. Estos equipos ofrecen configuraciones adaptadas a distintas interfaces, rangos de frecuencia y tipos de alimentación, garantizando compatibilidad con los requisitos más exigentes de ensayo.<br>
-    Cada amplificador ha sido seleccionado por su rendimiento en entornos de prueba críticos, incluyendo cámaras de vacío térmico, bancos de ensayo multipactor y sistemas de validación de conectores y materiales RF. La tabla siguiente presenta las especificaciones clave de nuestros modelos disponibles, facilitando la elección del equipo más adecuado según la aplicación técnica y el rango de operación requerido.
+    Cada amplificador ha sido seleccionado por su rendimiento en entornos de prueba críticos, incluyendo cámaras de vacío térmico, bancos de ensayo multipactor y sistemas de validación de conectores y materiales <abbr title='Radiofrecuencia'>RF</abbr>. La tabla siguiente presenta las especificaciones clave de nuestros modelos disponibles, facilitando la elección del equipo más adecuado según la aplicación técnica y el rango de operación requerido.
   `,
+  textoListadoEquipo1:"Dos sistemas <abbr title='Vector Network Analyzer'>VNA</abbr> con capacidad de hasta 50 GHz",
+  textoListadoEquipo2:"Analizadores de espectro de última generación que alcanzan hasta 67 GHz",
+  textoListadoEquipo3:"Amplificadores de bajo ruido (<abbr title='Low Noise Amplifier'>LNA</abbr>) duplicados, operativos hasta 60 GHz",
+  textoListadoEquipo4:"Amplia gama de generadores de <abbr title='Radiofrecuencia'>RF</abbr>, con cobertura de hasta 50 GHz",
+  textoListadoEquipo5:"Más de 40 canales de medición de potencia, cada uno con capacidad de hasta 50 GHz",
   textoNuestraSalaLimpia:`
     Una sala limpia, clase ISO-8, con una superficie de 100 m², dedicada principalmente a la integración y pruebas de componentes de vuelo, con la cámara de vacío térmico Mulcopower instalada en su interior.
   `,
   textoCamaraMontena:`
-    Disponemos de una cámara térmica PIM especialmente diseñada para ensayos radiados, con atmósfera de nitrógeno puro y un rango de temperatura de hasta 150°C. Su diseño optimiza la estabilidad térmica durante los ensayos, garantizando condiciones controladas para mediciones precisas de intermodulación pasiva (PIM), incluso en entornos exigentes de alta temperatura y atmósfera inerte.
+    Disponemos de una cámara térmica <abbr title='Intermodulación Pasiva'>PIM</abbr> especialmente diseñada para ensayos radiados, con atmósfera de nitrógeno puro y un rango de temperatura de hasta 150°C. Su diseño optimiza la estabilidad térmica durante los ensayos, garantizando condiciones controladas para mediciones precisas de intermodulación pasiva (PIM), incluso en entornos exigentes de alta temperatura y atmósfera inerte.
   `
 };

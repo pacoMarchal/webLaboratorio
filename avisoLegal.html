@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="tituloPagina">Laboratorio de ensayos de radiofrecuencia INTA</title>
+  <link rel="stylesheet" href="estilos/variables.css">
+  <link rel="stylesheet" href="estilos/estilos.css">
+  <link rel="stylesheet" href="estilos/menuSuperior.css">
+  <link rel="stylesheet" href="estilos/slideshowControl.css">
+  <link rel="stylesheet" href="estilos/responsive.css">
+  <style>
+
+    #avisoLegal {
+      /*border: 1px solid red;*/
+      display: inline-block;
+      width: 90%;
+      color: var(--mainGridColorFondo);
+    }
+
+    #avisoLegal h3 {
+      padding: 1rem 0;
+      font-size: 2rem;
+      color: var(--subMenuFondo);
+    }
+
+    p {
+      margin: revert;
+    }
+
+  </style>
+</head>
+<body>
+  <header class="barra-navegacion">
+    <img src="imagenes/logoInta2.png" alt="Logo INTA" class="logo">
+    <nav class="menu" aria-label="Menú principal de navegación">
+      <button class="boton-menu" aria-label="Abrir menú de navegación" onclick="alternarMenu()">☰</button>
+      <ul id="elementos-menu">
+        <li><a href="index.html" data-i18n="menuInicio">Inicio</a></li>
+        <li class="tiene-submenu">
+          <a href="index.html#ensayos"><span data-i18n="menuEnsayos">Ensayos</span><span> ▾</span></a>
+          <ul class="submenu">
+            <li><a href="ensayos.html#multipactor" data-i18n="menuMultipactor">Multipactor</a></li>
+            <li><a href="ensayos.html#corona" data-i18n="menuCorona">Corona</a></li>
+            <li><a href="ensayos.html#pim" data-i18n="menuPim">PIM</a></li>
+            <li><a href="ensayos.html#powerHandling" data-i18n="menuPowerHandling">Power Handling</a></li>
+          </ul>
+        </li>
+        <li class="tiene-submenu">
+          <a href="index.html#capacidades-tecnicas"><span data-i18n="menuCapacidadesTecnicas">Capacidades Técnicas</span><span> ▾</span></a>
+          <ul class="submenu">
+            <li><a href="capacidadesTecnicas.html#amplificadores" data-i18n="menuAmplificadores">Amplificadores</a></li>
+            <li><a href="capacidadesTecnicas.html#camaras" data-i18n="menuCamaras">Cámaras</a></li>
+            <li><a href="capacidadesTecnicas.html#areaLimpia" data-i18n="menuAreaLimpia">Área limpia</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#misiones" data-i18n="menuMisionesParticipadas">Misiones Participadas</a></li>
+        <li><a href="multimedia.html#multimedia" data-i18n="menuMultimedia">Multimedia</a></li>
+        <li>
+          <label class="switch">
+            <input type="checkbox" id="languageToggle" aria-label="Cambiar idioma">
+            <span class="slider"></span>
+          </label>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <header id="encabezado">
+    <button class="flecha izquierda" aria-label="Mostrar imagen previa">&#10094;</button>
+    <button class="flecha derecha" aria-label="Mostrar imagen posterior">&#10095;</button>
+    <button id="boton-pausa" class="boton-slideshow" aria-label="Pausar presentación imágenes">❚❚</button>
+
+    <h1 class="texto-actividad">
+      INTA RF Power Laboratory
+    </h1>
+  </header>
+
+  <main>
+
+    <section id="alta-potencia">
+      <h2 class="visualmente-oculto">Alta potencia</h2>
+      <div title="Trabajamos con alta potencia" data-i18n-title="titAltaPotencia"><span data-i18n="altaPotencia">ALTA POTENCIA</span></div>
+    </section>
+
+    <section>
+      <header>
+        <h2 data-i18n="footerAviso"></h2>
+      </header>
+
+      <div id="avisoLegal">
+
+        <h3>Destinatarios y condiciones de utilización del portal www.inta.es</h3>
+
+        <p>El dominio en Internet<strong> inta.es</strong> es de la titularidad del Instituto Nacional de Técnica Aeroespacial (en adelante INTA), con NIF INTA Q2822003F sita en la carretera de Torrejón a Ajalvir, km 3,2 – 28850 Madrid - España. Teléfono: (+ 34) 91 520 12 00.</p>
+
+        <p>El portal oficial del Instituto Nacional de Técnica Aeroespacial en la red de Internet es <a href="https://www.inta.es/INTA/es/index.html" target="_blank" rel="noopener noreferrer">www.inta.es</a>. A través de esta página Web, Vd. accederá a la información elaborada por los diferentes departamentos del Centro.</p>
+
+        <p>Al acceder al dominio <strong>inta.es</strong> será redirigido a la página web oficial del del Instituto Nacional de Técnica Aeroespacial.</p>
+
+        <h3>Condiciones generales de uso del portal www.inta.es</h3>
+
+        <p>El Instituto Nacional de Técnica Aeroespacial le informa que el acceso y uso de la página web <a href="https://www.inta.es/INTA/es/index.html" target="_blank" rel="noopener noreferrer">www.inta.es</a> y todos los subdominios y directorios incluidos bajo la misma (en adelante, conjuntamente denominados como el Portal), así como los servicios o contenidos que a través de él se puedan obtener, están sujetos a los términos que se detallan en este <strong>Aviso Legal</strong>, sin perjuicio de que el acceso a alguno de dichos servicios o contenidos pudieran precisar de la aceptación de unas Condiciones Generales adicionales.</p>
+
+        <p>Por ello, si las consideraciones detalladas en este <strong>Aviso Legal</strong> no son de su conformidad, rogamos no haga uso del Portal, ya que cualquier uso que haga del mismo o de los servicios y contenidos en él incluidos implicará la aceptación de los términos legales recogidos en este texto.</p>
+
+        <p>El Instituto Nacional de Técnica Aeroespacial se reserva el derecho a realizar cambios en el Portal sin previo aviso, con el objeto de actualizar, corregir, modificar, añadir o eliminar los contenidos del Portal o de su diseño. Los contenidos y servicios que ofrece el Portal se actualizan periódicamente. Debido a que la actualización de la información no es inmediata, le sugerimos que compruebe siempre la vigencia y exactitud de la información, servicios y contenidos recogidos en el Portal.</p>
+
+        <p>Las condiciones y términos que se recogen en el presente Aviso pueden variar, por lo que le invitamos a que revise estos términos cuando visite de nuevo el Portal. El Instituto Nacional de Técnica Aeroespacial no se hace responsable de los daños y perjuicios que pudiera ocasionar la utilización de las herramientas e informaciones contenidas en <a href="https:\\www.inta.es" target="_blank" rel="noopener noreferrer">www.inta.es</a> en relación con la adopción de decisiones sobre el inicio, desarrollo o resultado de procedimientos administrativos si los hubiera. Tales decisiones deben ser contrastadas en los centros, organismos o dependencias competentes. En cualquier caso, la información y contenidos de esta Web no podrá ser alegada en procesos contradictorios con la Administración Pública, no asumiendo responsabilidad alguna por las discrepancias que pudiesen existir entre los documentos impresos de la Administración competente y la publicación electrónica en estas páginas.</p>
+
+        <h3>Derechos de propiedad intelectual y propiedad industrial</h3>
+
+        <p>Tanto el diseño del Portal y sus códigos fuentes, como los logos, marcas y demás signos distintivos que aparece en el mismo, pertenecen al Instituto Nacional de Técnica Aeroespacial o entidades colaboradoras y están protegidos por los correspondientes derechos de propiedad intelectual e industrial. Igualmente están protegidos por los correspondientes derechos de propiedad intelectual e industrial las imágenes, logotipos, etc. contenidos en el servidor del Instituto Nacional de Técnica Aeroespacial.</p>
+
+        <p>El Instituto Nacional de Técnica Aeroespacial declara su respeto a los derechos de propiedad intelectual e industrial de terceros; por ello, si considera que este sitio pudiera estar violando sus derechos, rogamos se ponga en contacto con el INTA en la siguiente dirección de e-mail: <a title="Enviar correo electrónico a comunicacion@inta.es en nueva ventana" href="mailto:comunicacion@inta.es" target="_blank" rel="noopener noreferrer">comunicacion@inta.es</a>.</p>
+
+        <h3>Privacidad</h3>
+
+        <p>El Instituto Nacional de Técnica Aeroespacial es la entidad responsable del tratamiento de datos generado con los datos de carácter personal suministrados por los usuarios bien a través del <a title="Ir al Formulario de Contacto. Se abre en nueva ventana." href="https://www.inta.es/INTA/es/contacta-con-nosotros/" target="_blank" rel="noopener noreferrer">formulario de contacto</a> de su Portal, o bien a través de algún otro formulario disponible en <a title="Ir a listado portales web dependientes" href="https://www.inta.es/INTA/es/webs-departamentales/">portales web dependientes</a> de este instituto, incluidas la web de la Oficina de Transferencia de Resultados de Investigación (OTRI) y "Descubre y Aprende" de la Unidad de Cultura Científica del INTA.</p>
+
+        <p>De acuerdo con la <a title="Ir al BOE Ley Orgánica 3/2018. Se abre en nueva ventana." href="https://www.boe.es/buscar/doc.php?id=BOE-A-2018-16673" target="_blank" rel="noopener noreferrer">Ley Orgánica 3/2018</a>, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, el Instituto Nacional de Técnica Aeroespacial se compromete al cumplimiento de su obligación de secreto con respecto a los datos de carácter personal y al deber de tratarlos con confidencialidad. A estos efectos, adoptará las medidas necesarias para evitar su alteración, pérdida, tratamiento o acceso no autorizado.</p>
+
+        <p>La recogida y tratamiento automatizado de los datos personales tiene como finalidad la gestión, prestación, ampliación y mejora de los servicios solicitados en cada momento por el usuario y el seguimiento de consultas planteadas por los usuarios.</p>
+
+        <p>Usted tendrá la posibilidad de ejercer los derechos de acceso, rectificación, cancelación y oposición de sus datos personales que obran en los tratamientos del Ministerio de Defensa, solicitándolo por cualquier medio que deje constancia de su envío y de su recepción. Podrá ejercer sus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad de los datos a través de la sede electrónica del Ministerio de Defensa: <a title="Ir a la sede electrónica del Minististerio de Defensa." href="https://sede.defensa.gob.es/acceda/index"  target="_blank" rel="noopener noreferrer">https://sede.defensa.gob.es/acceda/index</a> (procedimiento “Ejercicio de derechos de protección de datos ante la Secretaría de Estado de Defensa (Código SIA: 1161094)”); en los Registros de la Administración Pública, dirigiendo la solicitud al INTA; o enviando un correo electrónico a <a title="Enviar correo a DPD@mde.es" href="mailto:DPD@mde.es" target="_blank" rel="noopener noreferrer">DPD@mde.es</a> con firma validada a través de la plataforma <a title="VALIDE Portal de firma electrónica" href="https://valide.redsara.es/" target="_blank" rel="noopener noreferrer">VALIDE</a> o por correo postal dirigido al Delegado de Protección de Datos, Paseo de la Castellana 109 (Ministerio de Defensa), 28071 Madrid.</p>
+
+        <h3>Modelos digitales para ARCO+ en formato PDF</h3>
+
+        <p>Mediante los siguientes documentos podrá ejercitar los diferentes derechos que le asisten de forma presencial o electrónica (telemática) en los registros y organismos habilitados.</p>
+
+        <ol>
+          <li>Modelo solicitud <a title="Descargar Documento PDF derecho de Acceso." href="https://sede.defensa.gob.es/acceda/pdfs/Modelo_solicitud_derecho_acceso_acc.pdf" target="_blank" rel="noopener noreferrer">derecho ACCESO</a></li>
+          <li>Modelo solicitud <a title="Descargar Documento PDF derecho de Limitación" href="https://sede.defensa.gob.es/acceda/pdfs/Modelo_solicitud_derecho_limitacion_acc.pdf" target="_blank" rel="noopener noreferrer">derecho LIMITACIÓN</a></li>
+          <li>Modelo solicitud <a title="Descargar Documento PDF derecho de Oposición." href="https://sede.defensa.gob.es/acceda/pdfs/Modelo_solicitud_derecho_oposicion_acc.pdf" target="_blank" rel="noopener noreferrer">derecho OPOSICIÓN</a></li>
+          <li>Modelo solicitud <a title="Descargar Documento PDF derecho de Portabilidad." href="https://sede.defensa.gob.es/acceda/pdfs/Modelo_solicitud_derecho_portabilidad_acc.pdf" target="_blank" rel="noopener noreferrer">derecho PORTABILIDAD</a></li>
+          <li>Modelo solicitud <a title="Descargar Documento PDF derecho de Rectificación." href="https://sede.defensa.gob.es/acceda/pdfs/Modelo_solicitud_derecho_rectificacion_acc.pdf" target="_blank" rel="noopener noreferrer">derecho RECTIFICACIÓN</a></li>
+          <li>Modelo solicitud <a title="Descargar Documento PDF derecho de Supresión." href="https://sede.defensa.gob.es/acceda/pdfs/Modelo_solicitud_derecho_supresion_acc.pdf" target="_blank" rel="noopener noreferrer">derecho SUPRESIÓN</a></li>
+        </ol>
+
+        <p>El Instituto Nacional de Técnica Aeroespacial mantiene los niveles de protección de sus datos personales conforme al <a title="Ir al BOE Reglamento General de Protección de Datos. Se abre en nueva ventana." href="https://www.boe.es/doue/2016/119/L00001-00088.pdf" target="_blank" rel="noopener noreferrer">Reglamento General de Protección de Datos</a>, relativo a las medidas de seguridad de los ficheros automatizados que contengan datos de carácter personal, y ha establecido todos los medios técnicos a su alcance para evitar la pérdida, mal uso, alteración, acceso no autorizado y robo de los datos que Usted facilite al Ministerio de Defensa, sin perjuicio de que las medidas de seguridad en Internet no sean inexpugnables.</p>
+
+        <p>El Instituto Nacional de Técnica Aeroespacial se reserva la facultad de modificar el presente apartado de Privacidad, así como su <a title="Ir a Política de privacidad del INTA en misma ventana" href="politicaPrivacidad.html#politicaPrivacidad">Política de Privacidad</a>, para adaptarla a las novedades legislativas, jurisprudenciales o de interpretación de la Agencia Española de Protección de Datos. En este caso, el El Instituto Nacional de Técnica Aeroespacial anunciará dichos cambios, indicando claramente y con la debida antelación las modificaciones efectuadas, y solicitando, en caso de que sea necesario, su aceptación de dichos cambios.</p>
+
+        <h3>Ley aplicable y jurisdicción</h3>
+
+        <p>La ley aplicable en caso de disputa o conflicto de interpretación de los términos que conforman este <strong>Aviso Legal</strong>, así como cualquier cuestión relacionada con los servicios del presente Portal, será la ley española.</p>
+
+        <p>Para la resolución de cualquier conflicto que pueda surgir con ocasión de la visita al Portal o del uso de los servicios que en él se puedan ofertar, el INTA y el Usuario acuerdan someterse a los Jueces y Tribunales de domicilio del Usuario, siempre que el mismo esté situado en territorio español.</p>
+
+        <h3>Política de Certificados electrónicos. Requisitos</h3>
+
+        <p>Para poder acceder a los servicios y trámites del Instituto Nacional de Técnica Aeroespacial a través de certificado electrónico deberá acreditar su identidad y, en los casos que así se requiera, firmar electrónicamente los escritos presentados. Para estos fines, se aceptarán los certificados digitales admitidos por la Administración General del Estado.</p>
+
+        <h3>Reutilización de la información del Sector Público</h3>
+
+        <p>Se incluye en el texto del Aviso legal contenido del Anexo del Real Decreto 1495/2011, por el que se desarrolla la Ley 37/2007, según el cual deberá estar disponible en el espacio de reutilización designado, preferentemente en la sede electrónica del órgano administrativo, organismo o entidad correspondiente.</p>
+
+        <ul>
+          <li><strong>Obligatoriedad de las condiciones generales</strong>
+            <p>Las presentes condiciones generales, disponibles con carácter permanente bajo <a title="Ir a web" href="https://www.inta.es/INTA/es/aviso-legal/index.html" target="_blank" rel="noopener noreferrer">https://www.inta.es/INTA/es/aviso-legal</a>, vincularán a cualquier agente reutilizador por el mero hecho de hacer uso de los documentos sometidos a ellas.</p>
+
+            <p>Autorización de reutilización y cesión no exclusiva de derechos de propiedad intelectual.</p>
+
+            <p>Las presentes condiciones generales permiten la reutilización de los documentos sometidos a ellas para fines comerciales y no comerciales. Se entiende por reutilización el uso de documentos que obran en poder de los órganos de la Administración General del Estado y los demás organismos y entidades del sector público estatal referidos en el artículo 1.2 del Real Decreto 1495/2011, de 24 de octubre, por el que se desarrolla la Ley 37/2007, de 16 de noviembre, sobre reutilización de la información del sector público estatal, por personas físicas o jurídicas, con fines comerciales o no comerciales, siempre que dicho uso no constituya una actividad administrativa pública. La reutilización autorizada incluye, a modo ilustrativo, actividades como la copia, difusión, modificación, adaptación, extracción, reordenación y combinación de la información.</p>
+
+            <p>El concepto de documento es el establecido en el apartado 2 del artículo 3 de la Ley 37/2007, de 16 de noviembre, sobre reutilización de la información del sector público, por lo que comprende toda información cualquiera que sea su soporte material o electrónico así como su forma de expresión gráfica, sonora o en imagen utilizada, incluyendo, en consecuencia, también los datos en sus niveles más desagregados o “en bruto”.</p>
+
+            <p>Esta autorización conlleva, asimismo, la cesión gratuita y no exclusiva de los derechos de propiedad intelectual, en su caso, correspondientes a tales documentos, autorizándose la realización de actividades de reproducción, distribución, comunicación pública o transformación, necesarias para desarrollar la actividad de reutilización autorizada, en cualquier modalidad y bajo cualquier formato, para todo el mundo y por el plazo máximo permitido por la Ley.</p>
+
+          </li>
+          <li><strong>Condiciones generales para la reutilización </strong>
+
+            <ul>
+              <li>Está prohibido desnaturalizar el sentido de la información.</li>
+              <li>Debe citarse la fuente de los documentos objeto de la reutilización. Esta cita podrá realizarse de la siguiente manera: "Origen de los datos: INTA".</li>
+              <li>Debe mencionarse la fecha de la última actualización de los documentos objeto de la reutilización, siempre cuando estuviera incluida en el documento original.</li>
+              <li>No se podrá indicar, insinuar o sugerir que el Instituto Nacional de Técnica Aeroespacial, titular de la información reutilizada participa, patrocina o apoya la reutilización que se lleve a cabo con ella.</li>
+              <li>Deben conservarse, no alterarse ni suprimirse los metadatos sobre la fecha de actualización y las condiciones de reutilización aplicables incluidos, en su caso, en el documento puesto a disposición para su reutilización.</li>
+            </ul>
+          </li>
+          <li><strong>En el ámbito del Instituto Nacional de Técnica Aeroespacial</strong>
+
+            <ul>
+              <li>Artículo 3.3 letra b), queda excluidos de la ley los documentos sometidos al secreto estadístico, a la confidencialidad comercial, tales como secretos comerciales, profesionales o empresariales y, en general, los documentos relacionados con actuaciones sometidas por una norma al deber de reserva, secreto o confidencialidad</li>
+            </ul>
+          </li>
+          <li><strong>Exclusión de responsabilidad </strong>
+            <p>La utilización de los conjuntos de datos se realizará por parte de los usuarios o agentes de la reutilización bajo su propia cuenta y riesgo, correspondiéndoles en exclusiva a ellos responder frente a terceros por daños que pudieran derivarse de ella.</p>
+
+            <p>El Instituto Nacional de Técnica Aeroespacial no será responsable del uso que de su información hagan los agentes reutilizadores ni tampoco de los daños sufridos o pérdidas económicas que, de forma directa o indirecta, produzcan o puedan producir perjuicios económicos, materiales o sobre datos, provocados por el uso de la información reutilizada.</p>
+
+            <p>El Instituto Nacional de Técnica Aeroespacial no garantiza la continuidad en la puesta a disposición de los documentos reutilizables, ni en contenido ni en forma, ni asume responsabilidades por cualquier error u omisión contenido en ellos.</p>
+
+            <p>El agente reutilizador se halla sometido a la normativa aplicable en materia de reutilización de la información del sector público, incluyendo el régimen sancionador previsto en el artículo 11 de la Ley 37/2007, de 16 de noviembre, sobre reutilización de la información del sector público.</p>
+
+          </li>
+        </ul>
+        
+        <h3>Links o hiperenlaces</h3>
+
+        <p>El Insituto Nacional de Técnica Aeroespacial le facilita el acceso a otras páginas web que consideramos pueden ser de su interés. El objetivo de dichos enlaces es únicamente facilitarle la búsqueda de los recursos que le puedan interesar a través de Internet. No obstante, dichas páginas no le pertenecen, ni hace una revisión de sus contenidos y, por ello, no puede hacerse responsable de los mismos, del funcionamiento de la página enlazada o de los posibles daños que puedan derivarse del acceso o uso de la misma.</p>
+
+        <p>No se permite que desde ninguna página web, aplicación para dispositivo móvil o dirección de correo electrónico se realice enlace al dominio www.inta.es, salvo que medie autorización expresa por escrito del Insituto Nacional de Técnica Aeroespacial.</p>
+
+        <p>Adicionalmente, <strong>dichos enlaces deberán respetar las siguientes condiciones</strong>:</p>
+
+        <ol style="list-style-type: lower-alpha;">
+          <li>Únicamente podrán realizarse enlaces con la Home Page o página principal de esta web;</li>
+          <li>El establecimiento del enlace no supondrá ningún tipo de acuerdo, contrato, patrocinio ni recomendación por parte del Insituto Nacional de Técnica Aeroespacial de la página que realiza el enlace.</li>
+        </ol>
+        <p>En cualquier momento, el INTA podrá retirar la autorización mencionada en el párrafo anterior, sin necesidad de alegar causa alguna. En tal caso, la página que haya realizado el enlace deberá proceder a su inmediata supresión, tan pronto como reciba la notificación de la revocación de la autorización por parte del Instituto Nacional de Técnica Aeroespacial.</p>
+
+        <h3>Frames</h3>
+
+        <p>El Insituto Nacional de Técnica Aeroespacial prohíbe expresamente la realización de “framings” o la utilización por parte de terceros de cualesquiera otros mecanismos que alteren el diseño, configuración original o contenidos de su Portal.</p>
+
+        <h3>Versión Multilingüe</h3>
+
+        <p>El presente sitio web está traducido a varias lenguas españolas oficiales en sus respectivos territorios, de conformidad con lo establecido en el artículo 3 de la Constitución Española de 1978 y sus Estatutos de Autonomía. También está traducido al inglés.</p>
+
+        <p>El contenido del portal está traducido a diferentes niveles de profundidad, al menos en su nivel 2.</p>
+
+        <p>Se advierte que con carácter general puede existir un desfase entre la versión en castellano y en las otras lenguas derivadas del proceso de traducción a las mismas.</p>
+
+        <h3>Estadísticas de uso</h3>
+
+        <p>El Instituto Nacional de Técnica Aeroespacial informa de la utilización de la herramienta <strong>Google Analytics</strong>&nbsp;en este Sitio web a efectos exclusivamente estadísticos.</p>
+
+        <h3>Licencias Creative Commons</h3>
+
+        <p>La presente publicación pertenece al&nbsp; Instituto Nacional de Técnica Aeroespacial y esta bajo licencia&nbsp;CC BY-SA: Reconocimiento-Compartir Igual</p>
+
+        <p><img dir="ltr" style="width: 200px;" title="Imagen de Licencia Creative Comons CC BY-SA" src="imagenes/creative-comons-ccbysa.png_1248900439.png" alt="Imagen de Licencia Creative Comons CC BY-SA" /></p>
+
+        <p><a title="Ir a web Creative Commons en nueva ventana" href="https://creativecommons.org/licenses/?lang=es_ES" target="_blank" rel="noopener noreferrer">Acceda al Resumen de la Licencia</a></p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor-footer">
+      <img src="imagenes/logoInta2.png" alt="Logo INTA" class="logo-footer">
+      <address class="info-footer">
+        <p><small data-i18n-html="direccionEmpresa">© 2025 INTA - Laboratorio de Ensayos de Radiofrecuencia</small></p>
+        <p data-i18n="direccionDireccion">Ctra. Ajalvir, km 4, 28850 Torrejón de Ardoz, Madrid</p>
+      </address>
+      <nav class="enlaces-footer" aria-label="Enlaces legales y de contacto">
+        <a href="javascript:void(0)" data-i18n="footerAviso">Aviso Legal</a>
+        <a href="politicaPrivacidad.html#politicaPrivacidad" data-i18n="footerPolitica">Política de Privacidad</a>
+        <a href="contacto.html#contacto" data-i18n="contacto">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/menuSuperior.js"></script>
+  <script src="js/slideshowCabecera.js"></script>
+  <script src="js/efectoScrollMain.js"></script>
+  <script src="js/scrollUniversal.js"></script>
+  <script src="js/traduccion-es.js"></script>
+  <script src="js/traduccion-en.js"></script>
+  <script src="js/switchIdioma.js"></script>
+
+</body>
+</html>
